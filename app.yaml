@@ -1,0 +1,27 @@
+application: orhratsite-010317
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /images
+  static_dir: images
+
+- url: /js
+  static_dir: js
+
+- url: /css
+  static_dir: css
+  mime_type: "text/css"
+
+- url: /.*
+  script: ORHRAT_website.app
+
+libraries:
+- name: jinja2
+  version: latest

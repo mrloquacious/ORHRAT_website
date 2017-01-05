@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Standard 4 (Skills Assessment)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--the line below is from frontend-nanodegree-resume-master.Some sources don't include "type="text/css" - why not?-->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery-1.12.0.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/javascript.js"></script>
+  <script src="js/js.cookie.js"></script>
+</head>
+
+  <body class="body-standard">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid clear">
+        <div class="navbar-header">
+            <a href="index.html"><span class="navbar-brand">ORHRAT</span></a>
+            <div id="hamburg" class="login-menu-hamburg">
+              <a href="login.html"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+            </div>
+        </div>
+      </div><!-- End of container. -->
+    </nav><!-- End of top navbar. -->
+
+
+
+    <div id="wrap">
+      <div class="container-fluid clear" id="st4-body">
+        <div id="st4-head-subhead">
+          <div class="row clear">
+            <div id="st4-pdf"><span class="glyphicon glyphicon-file"></span>Download a PDF</div>
+            <h3 id="st4-heading"><strong>STANDARD 4 (SKILLS ASSESSMENT)</strong></h3>
+          </div>
+
+          <div class="row clear" id="st4-subhead">
+            <div class="row clear" id="st4-subhead-text">
+              <h4><strong>STANDARD 4 FOCUSES ON ANALYZING INFLUENCES.</strong></h4>
+              <h5>After implementing this curriculum, are students (Grade 9-12) able to recognize the influence of culture, media, technology, and other factors on healthy relationship practices and behaiviors?</h5>
+            </div>
+          </div>
+        </div><!-- End of head/subhead row. -->
+
+
+        <div class="row clear" id="checkbox-header">
+          <h4><strong>Check the box next to each healthy relationship/sexual health expectation addressed in the curriculum:</strong></h4>
+        </div> <!-- End of checkbox-header row. -->
+
+<!-- I need to preserve the checkThis() number or create a cookie (?) when user submits form which gets the checkThis() score and returns it to the newly rendered form. God, I hope I don't need to get the number of checked boxes from the database in order to make it happen. -->
+        <form method="post" id="st4-form">
+          <div class="row clear" id="checkbox-list">
+            <div class="checkbox-odd">
+              <label for="cbox1" class="checkbox-text"><input type="checkbox" id="cbox1" name="st4_first" {{st4_first}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze the influence of friends, family, media, society, and culture on the expression of gender, sexual oriendtation and identity. (<span class="checkbox-code">SH.INF.1</span>)</label><br>
+            </div>
+
+<!-- Checkbox name="st4_first" doesn't seem like the best naming convention. Does it matter that if "first" were replaced by "1", the Key Names would be in order in the database? -->
+            <div class="checkbox-even">
+              <label for="cbox2" class="checkbox-text"><input type="checkbox" id="cbox2" name="st4_second" {{st4_second}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze external influences and societal messages that impact attitudes about bullying, sexual harassment, sexual abuse, sexual assault, incest, rape, and dating violence. (<span class="checkbox-code">PS.12.INF.2</span>)</label><br>
+            </div>
+            <div class="checkbox-odd">
+              <label for="cbox3" class="checkbox-text"><input type="checkbox" id="cbox3" name="st4_third" {{st4_third}} onclick="checkThis()"><span class="fake-textbox"></span> Explain how media can influence one's beliefs about what constitues a healthy sexual relationship. (<span class="checkbox-code">HR.12.INF.1</span> / <span class="checkbox-code">SH.INF.3</span>)</label><br>
+            </div>
+            <div class="checkbox-even">
+              <label for="cbox4" class="checkbox-text"><input type="checkbox" id="cbox4" name="st4_fourth" {{st4_fourth}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze how personal, family, and cultural values influence healthy behaviors.  Analyze how school and community affect personal violence practices and behaviors. (<span class="checkbox-code">V2.12.7</span> / <span class="checkbox-code">MSEH.INF.1</span>)</label><br>
+            </div>
+            <div class="checkbox-odd">
+              <label for="cbox5" class="checkbox-text"><input type="checkbox" id="cbox5" name="st4_fifth" {{st4_fifth}} onclick="checkThis()"><span class="fake-textbox"></span> Identify the social environments that influence health and well-being [with regard to relationships]. (<span class="checkbox-code">MSEH.INF.3</span>)</label><br>
+            </div>
+            <div class="checkbox-even">
+              <label for="cbox6"  class="checkbox-text"><input type="checkbox" id="cbox6" name="st4_sixth" {{st4_sixth}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze how culture supports and challenges sexual health and violence prevention beliefs, practices, behaviors, and relationships. (<span class="checkbox-code">SH2.12.2</span> / <span class="checkbox-code">V2.12.2</span>)</label><br>
+            </div>
+            <div class="checkbox-odd">
+              <label for="cbox7" class="checkbox-text"><input type="checkbox" id="cbox7" name="st4_seventh" {{st4_seventh}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze how peers and perceptions of norms influence healthy and unhealthy sexual health practices, behaviors, and relationships. (<span class="checkbox-code">SH2.12.3</span>)</label><br>
+            </div>
+            <div class="checkbox-even">
+              <label for="cbox8" class="checkbox-text"><input type="checkbox" id="cbox8" name="st4_eighth" {{st4_eighth}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze influences that may have an impact on deciding whether or when to engage in sexual behaviors. (<span class="checkbox-code">PR.12.INF.1</span>)</label><br>
+            </div>
+            <div class="checkbox-odd">
+              <label for="cbox9" class="checkbox-text"><input type="checkbox" id="cbox9"name="st4_ninth" {{st4_ninth}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze how peers and perceptions of norms influence healthy and unhealthy violence and violence prevention practices and behaviors. (<span class="checkbox-code">V2.12.3</span>)</label><br>
+            </div>
+            <div class="checkbox-even">
+              <label for="cbox10" class="checkbox-text"><input type="checkbox" id="cbox10" name="st4_tenth" {{st4_tenth}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze how personal attitudes, values, and beliefs influence healthy and unhealthy sexual health practices, behaviors, and relationships. (<span class="checkbox-code">SH2.12.4</span>)</label><br>
+            </div>
+            <div class="checkbox-odd">
+              <label for="cbox11" class="checkbox-text"><input type="checkbox" id="cbox11" name="st4_eleventh" {{st4_eleventh}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze how personal attitudes, values, and beliefs influence healthy and unhealthy violence and vilence prevention practices and behaviors. (<span class="checkbox-code">V2.12.4</span>)</label><br>
+            </div>
+            <div class="checkbox-even">
+              <label for="cbox12" class="checkbox-text"><input type="checkbox" id="cbox12" name="st4_twelth" {{st4_twelth}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze the role bystanders can play in preventing violence and promoting healthy environments, and the barriers to bystander intervention. (<span class="checkbox-code">EC.VSP.INF.1</span>)</label><br>
+            </div>
+            <div class="checkbox-odd">
+              <label for="cbox13" class="checkbox-text"><input type="checkbox" id="cbox13" name="st4_thirteenth" {{st4_thirteenth}} onclick="checkThis()"><span class="fake-textbox"></span> Identify influences, peer, family, community, and media that contribute to a healthy self-image. (<span class="checkbox-code">MSEH.INF.2</span>)</label><br>
+            </div>
+            <div class="checkbox-even">
+              <label for="cbox14" class="checkbox-text"><input type="checkbox" id="cbox14" name="st4_fourteenth" {{st4_fourteenth}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze how friends, family, media, society, and culture can influence self-concept and body image. (<span class="checkbox-code">PD.12.INF.1</span>)</label><br>
+            </div>
+            <div class="checkbox-odd">
+              <label for="cbox15" class="checkbox-text"><input type="checkbox" id="cbox15" name="st4_fifteenth" {{st4_fifteenth}} onclick="checkThis()"><span class="fake-textbox"></span> Describe how alcohol and other drugs can affect decision-making and influence sexual risk taking. (<span class="checkbox-code">SH.INF.2</span>)</label><br>
+            </div>
+            <div class="checkbox-even">
+              <label for="cbox16" class="checkbox-text"><input type="checkbox" id="cbox16" name="st4_sixteenth" {{st4_sixteenth}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze factors, including alcohol and other substances that can affect the ability to give or perceive the provision of consent to sexual activity. (<span class="checkbox-code">HR.12.INF.2</span>)</label><br>
+            </div>
+            <div class="checkbox-odd">
+              <label for="cbox17" class="checkbox-text"><input type="checkbox" id="cbox17" name="st4_seventeenth" {{st4_seventeenth}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze the effect of media and technology on personal, family and acmmunity sexual health and violence prevention practices, behaviors, and relationships, and violence prevention practices and behaviors. (<span class="checkbox-code">SH2.12.8</span> / <span class="checkbox-code">V2.12.8)</span></label><br>
+            </div>
+            <div class="checkbox-even">
+              <label for="cbox18" class="checkbox-text"><input type="checkbox" id="cbox18" name="st4_eighteenth" {{st4_eighteenth}} onclick="checkThis()"><span class="fake-textbox"></span> Differentiate the relevant influences, including family, culture, peers, school, community, media, technology and public health policies, on violence prevention and sexual health practices and behaviors. (<span class="checkbox-code">SH2.12.9</span> / <span class="checkbox-code">V2.12.9</span>)</label><br>
+            </div>
+            <div class="checkbox-odd">
+              <label for="cbox19" class="checkbox-text"><input type="checkbox" id="cbox19" name="st4_ninteenth" {{st4_ninteenth}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze the factors that influence opportunities to obtain safe, accessible, equitable and affordable products and services that support sexual health and violence prevention practices and behaviors for oneself and others (e.g., rape cricis center, bystander trainings, anger management counseling). (<span class="checkbox-code">SH2.12.10</span> / <span class="checkbox-code">V2.12.10)</span></label><br>
+            </div>
+            <div class="checkbox-even">
+              <label for="cbox20" class="checkbox-text"><input type="checkbox" id="cbox20" name="st4_twentieth" {{st4_twentieth}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze how some health risk behaviors influence the likelihood of engaging in violent behaviors (e.g., how alcohol and other drug use influence violent behaviors). (<span class="checkbox-code">V2.12.5</span>)</label><br>
+            </div>
+            <div class="checkbox-odd">
+              <label for="cbox21" class="checkbox-text"><input type="checkbox" id="cbox21" name="st4_twenty_first" {{st4_twenty_first}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze how laws, rules, and regulations influence personal violence practices and behaviors. (<span class="checkbox-code">V2.12.6</span>)</label><br>
+            </div>
+
+            <!--<div id="save-and-continue-button-box">
+            <div id="save-and-continue-button">
+              <input type="submit"  id="save-and-continue-button-text" value="Save and Continue Editing">
+            </div>
+          </div>-->
+          </div> <!-- End of checkbox-list row. -->
+        </form>
+
+
+        <div class="row clear" id="scoring">
+          <div class="col-xs-4 clear">
+            <div id="you-marked"><p><strong>You marked:</strong></p>
+
+              <h2><span form="st4-form" id="you-marked-number" name="you-marked-number">{{cbox_count}}</span><span id="out-of-number">&nbspof 21</span></h2></div>
+
+              <div id="your-score"><p><strong>Which is a score of:</strong></p>
+
+              <h2><span id="your-score-number">{{score}}</span></h2></div>
+          </div>
+
+          <div class="col-xs-8 clear">
+            <p>The curriculum addresses:</p>
+            <table>
+              <tr>
+                <td><strong>21&nbsp</strong></td>
+                <td>= All of the skills expectations (score of 4)</td>
+              </tr>
+              <tr>
+                <td><strong>14-20&nbsp</strong></td>
+                <td>= Most of the skills expectations (score of 3)</td>
+              </tr>
+              <tr>
+                <td><strong>8-13&nbsp</strong></td>
+                <td>= Some of the skills expectations (score of 2)</td>
+              </tr>
+              <tr>
+                <td><strong>1-7&nbsp</strong></td>
+                <td>= A few of the skills expectations (score of 1)</td>
+              </tr>
+              <tr>
+                <td><strong>0&nbsp</strong></td>
+                <td>= None of the skills expectations (score of 0)</td>
+              </tr>
+            </table><br>
+              <p>This score will transfer to the Overall Summary Form.</p>
+
+          </div>
+        </div>
+
+        <div class="row clear" id="st4-buttons">
+
+          <div id="go-back-button-box">
+            <a href="CAS.html">
+              <div id="go-back-button">
+              <div id="go-back-button-text">Go back to <br>Overall Assessment</div>
+            </div></a>
+          </div>
+
+<!-- These two buttons change CAS.html ids #st4a-r-and-e and #st4a-r-and-e from display:none to display:inline (or something like that) -->
+          <div id="save-and-go-button-box">
+            <a href="#">
+              <div id="save-and-go-button">
+                <button type="submit" id="save-and-go-actual-button" form="st4-form">
+                  <span id="save-and-go-button-text">Save and Go to Next ></span>
+                  <span id="save-and-go-button-bottom-text">Standard 4 (Student Skill Practice)</span>
+              </button>
+              </div>
+            </a>
+          </div>
+
+          <a href="standard_4.html">
+            <div id="save-and-continue-button-box">
+              <div id="save-and-continue-button">
+                <button type="submit" id="save-and-continue-button-text" form="st4-form">Save and<br>Continue Editing</button>
+              </div>
+            </div>
+          </a>
+        </form>
+
+
+
+
+        </div> <!-- End of st4-buttons row. -->
+
+      </div> <!-- End of container. -->
+
+    </div> <!-- End of wrap. -->
+
+    <div id="footer">
+      <div class="container">
+        Footer Information
+      </div>
+    </div>
+
+
+  </body>
+</html>

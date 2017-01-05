@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--the line below is from frontend-nanodegree-resume-master.Some sources don't include "type="text/css" - why not?-->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+
+  <script src="js/jquery-1.12.0.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/javascript.js"></script>
+<!--   <script src="js/js.cookie.js"></script>
+ -->
+ </head>
+
+<body class="body-standard">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid clear">
+      <div class="navbar-header">
+        <a href="index.html" ><span class="navbar-brand">ORHRAT</span></a>
+
+        <div id="hamburg">
+
+          <a href="login-menu.html"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid clear">
+
+    <div class="row clear">
+      <div class="col-xs-8" id="login-heading">
+        <h3>LOGIN</h3>
+      </div>
+
+      <div class="col-xs-4">
+      </div>
+    </div> <!--End of login-body row.-->
+
+    <div class="row clear">
+      <div class="col-xs-8" id="username-password">
+        <form method="post"> <!--class="input"-->
+          <label><h3>Username
+            <input type="text" name="username" id="username" value="{{username}}"></h3>
+          </label>
+          {{login_error}}
+          <hr>
+          <label for="password"><h3>Password
+            <input type="password" name="password" id="password" value="{{password}}"></h3>
+          </label>
+          <hr>
+          <div id="go-button-box">
+            <input type="submit" id="go-button-text" value="Go">
+          </div>
+        </form>
+      </div>
+
+      <div class="col-xs-4">
+      </div>
+    </div>
+
+    <div class="row clear">
+      <div class="col-xs-8" id="password-retreival-account-creation">
+
+        <!--Programmed this link in jQuery too:-->
+        <a href="forgot_password.html">
+        <h6 id="password-retrieval-button"><strong>I forgot my password.</strong></h6>
+        </a>
+
+        <h6 id="no-account">Don't have an account?</h6>
+        <!--Programmed this link in jQuery too:-->
+        <a href="ORHRAT_user_signup.html"><h6 id="account-creation-button">Start account creation</h6></a>
+      </div>
+      <div class="col-xs-4">
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
+
+
+
+
+<!-- Old version
+
+          <div class="col-xs-4">
+          </div>
+        </div> End of username-password row.
+      </div> End of container.
+
+       Should this all be in 1 row rather than 3?:
+      <div class="container-fluid clear" id="login-links-etc">
+        <div class="row clear">
+          <div class="col-xs-8">
+            <div id="go-button-box">
+              <div id="go-button-text">Go</div>
+            </div>
+          </div>
+          <div class="col-xs-4">
+          </div>
+        </div> End of go-button row.
+
+        <div class="row clear">
+          <div class="col-xs-8">
+            Programmed this link in jQuery too:
+            <a href="#"><h6 id="password-retrieval-button"><strong>I forgot my password.</strong></h6></a>
+          </div>
+          <div class="col-xs-4">
+          </div>
+        </div> End of password-retrieval row.
+
+        <div class="row clear">
+          <div class="col-xs-8">
+            <h6 id="no-account">Don't have an account?</h6>
+            Programmed this link in jQuery too:
+            <a href="#"><h6 id="account-creation-button">Start account creation</h6></a>
+          </div>
+          <div class="col-xs-4">
+          </div>
+        </div> End of no-account row.
+      </div> End of login-links-etc container -->

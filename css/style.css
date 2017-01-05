@@ -1,0 +1,845 @@
+
+/* Not sure if this will come in handy or not. */
+.test {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+/*--- Footer ---*/
+
+/* This seems to get the sticky footer to work.
+Using html/body, #wrap, #footer. */
+html, body {
+    height: 100%;
+}
+
+body {
+/*   overflow: hidden; Not this, but close */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -50px;
+  /* Pad bottom by footer height */
+  padding: 0 0 50px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: 50px;
+    color: black;
+    background-color: #c2ae89;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 50px;
+    width:100%;
+    max-width: 960px;
+    bottom:0; /* I think this is redundant - .navbar-fixed-bottom. */
+    position:fixed;
+}
+
+
+/*--- General ---*/
+
+/* From Responsive Design class: */
+img, embed, object, video {
+    max-height: 100%;
+}
+
+input {
+    border: none;
+    outline:none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus
+/*input[type="submit"]:active*/ {
+    border-color: #4dd2ff;
+    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+    outline: 0 none;
+}
+
+/*input[type=checkbox] {
+     background: red;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 16px;
+    width: 16px;
+}*/
+
+a,
+a:hover,
+a:focus {
+    color: white !important;
+    text-decoration: none;
+}
+
+/* For Containers and Rows without margins and padding!: */
+.clear {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*--- Login-Menu-Page ---*/
+
+.align-right {
+    float: right;
+}
+
+
+/*--- Navbar ---*/
+
+.navbar {
+    background-color: #ff531a;
+    margin-bottom: 0px;
+    border:none;
+    border-radius: 0px; /* Overrides rounded .navbar corners */
+    max-width:960px;
+    margin-right: auto;
+    margin-left:auto;
+}
+
+.navbar-brand {
+    /* For now, this has to be here: */
+    color: white !important;
+    font-size: 24px; /* Overrides .navbar-brand font-size.*/
+    padding-left: 40px; /* Overrides .navbar-brand shite.*/
+}
+
+.navbar-brand:hover {
+    /* Make it glow? */
+}
+
+/* For some reason everything totally changes if .hamburg is a class.  So, it has to be an id, I guess. */
+#hamburg {
+    font-size: 24px;
+    color:white;
+    padding-top: 10px;
+    position: absolute;
+    right: 20px;
+}
+
+.login-menu-hamburg {
+    transform: rotate(90deg);
+}
+
+
+/*--- IDs ---*/
+
+
+/*--- Standard 4 (st4)---*/
+
+#st4-body {
+    margin-top: 60px;
+    padding-left: 50px;
+}
+
+#st4-head-subhead {
+    max-width: 800px;
+}
+
+#st4-pdf {
+    color:#4dd2ff;
+    float:right;
+    margin: 0px 0 0 0;
+}
+
+#st4-heading {
+    margin: 50px 0 0 0;
+}
+
+#st4-subhead {
+    background-color: #fff7e6;
+    border-left: 7px solid #ff531a;
+    margin: 20px 0 0 0;
+}
+
+#st4-subhead-text {
+    margin: 10px;
+}
+
+#st4-form {
+
+}
+
+#checkbox-header {
+    margin: 25px 200px 5px 20px;
+}
+
+#checkbox-list label {
+    font-weight: normal;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+/*label input {
+  display: none;/* <-- hide the default checkbox
+}*/
+
+label .fake-textbox {/* <-- style the artificial checkbox */
+  height: 10px;
+  width: 10px;
+  border: 1px solid gray;
+  display: inline-block;
+  position: relative;
+}
+
+[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
+  content: url(../images/checkbox_checked_ohrrat_copy.jpg);
+  position: absolute;
+  top: -6px;
+  left: -1px;
+}
+
+/*
+.custom-checkbox {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    top: 3px;
+    background: url("checkbox.png") no-repeat;
+}
+
+.custom-checkbox:hover{
+    background: url("checkbox-hover.png") no-repeat;
+}
+
+.custom-checkbox.selected{
+    background: url("checkbox-selected.png") no-repeat;
+}
+
+.custom-checkbox input[type="checkbox"]{
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    outline: none;
+    opacity: 0;
+    /* CSS hacks for older browsers */
+/*    _noFocusLine: expression(this.hideFocus=true);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -khtml-opacity: 0;
+    -moz-opacity: 0;
+} */
+
+/*input[type="checkbox"]:active, input[type="checkbox"]:checked,input[type="checkbox"]:hover, input[type="checkbox"]:focus {
+    outline-color:#4dd2ff;
+    color: #4dd2ff;
+    background: #4dd2ff;
+}
+    color: black;
+    background: black;
+}*/
+
+.checkbox-odd {
+    max-width: 700px;
+}
+
+.checkbox-even {
+    max-width: 700px;
+    background-color: #fff7e6;
+}
+
+.checkbox-text {
+    margin: 5px 0 5px 20px;
+}
+
+.checkbox-code {
+    color: #4dd2ff;
+}
+
+#scoring {
+    margin: 20px 0 0 20px;
+}
+
+#you-marked h2 {
+    margin: 0 0 0px 0;
+}
+
+#you-marked-number {
+    color: #4dd2ff;
+    border-bottom: 2px solid #999999;
+    /*text-decoration: underline;*/
+    margin: 0 0 0 40px;
+}
+
+#out-of-number {
+}
+
+#your-score {
+    margin: 20px 0 0 0;
+}
+
+#your-score-number {
+    color: #4dd2ff;
+    border-bottom: 2px solid #999999;
+    /*text-decoration: underline;*/
+    margin: 0 0 0 40px;
+}
+
+#st4-buttons {
+    max-width: 800px;
+    margin:50px 0 20px 0;
+}
+
+#go-back-button-box {
+    float: left;
+}
+
+#go-back-button {
+}
+
+#go-back-button-text {
+    color: #4dd2ff;
+    background-color:;
+    font-size: 16px;
+    font-weight:bold;
+    height:75px;
+    width:220px;
+    text-align: left;
+    padding: 15px 0 0 15px;
+    border: 1px solid #999999;
+}
+
+#go-back-button:hover {
+    box-shadow: 0 1px 1px #999999 inset, 0 0 8px #999999;
+}
+
+#save-and-continue-button-box {
+    float:right;
+}
+
+#save-and-continue-button {
+}
+
+#save-and-continue-button-text {
+    color: white;
+    background-color:#999999;
+    border: 0px; /* This removes bootstrap styling, which is kind of cool.  May be best to style the other buttons like this, but I've removed style for consistancy. */
+    font-size: 18px;
+    height:75px;
+    width:180px;
+    text-align: right;
+    padding: 0 10px 0 0;
+}
+
+#save-and-continue-button:hover {
+    box-shadow: 0 1px 1px #999999 inset, 0 0 8px #999999;
+}
+
+#save-and-go-button-box {
+    float:right;
+    margin-left: 10px;
+}
+
+#save-and-go-button {
+    color: white;
+    background-color:#4dd2ff;
+    font-size: 18px;
+    font-weight:;
+    height:75px;
+    width:250px;
+    text-align: right;
+    padding: 10px 10px 0 0;
+}
+
+#save-and-go-actual-button {
+    background-color:#4dd2ff;
+    border: 0px;
+}
+
+#save-and-go-button-text {
+    background-color: #4dd2ff;
+}
+
+#save-and-go-button-bottom-text {
+    font-size: 10px;
+    color: white;
+    text-align: right;
+    padding: 0px 0 50px 0;
+}
+
+#save-and-go-button:hover {
+    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+}
+
+/*--- CAS (Curriculum Assessment Summary) ---*/
+
+#cas-body {
+    margin: 100px 0 50px 0;
+    padding-left: 50px;
+}
+
+#cas-body ul {
+    font-size:;
+    list-style-type: none;
+}
+
+#cas-body hr {
+    border-top: 2px solid #999999;
+    margin: 10px 0 10px 0;
+}
+
+.cas-number {
+    color: #999999;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Can I keep this? */
+#cas-body .col-xs-8 {
+    margin-left: -10px;
+}
+
+#cas-heading {
+    padding: 0 0 20px 0;
+}
+
+.cas-subhead {
+    margin-bottom: 10px;
+}
+
+.cas-text {
+    font-size: 14px;
+    padding: 0 130px 0px 0;
+}
+
+#standards-assessments  {
+    font-size: ;
+}
+
+#start-analysis-button-box-1 {
+    float:right;
+    margin-top: 10px;
+}
+
+#start-analysis-button-box-2 {
+    float:right;
+    margin-top: 20px;
+}
+
+.start-standard-button-box {
+    float:right;
+}
+
+.start-analysis-button-text {
+    color: white;
+    background-color:#4dd2ff;
+    font-size: 12px;
+    font-weight:;
+    height:40px;
+    width:120px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.start-standard-button-text {
+    color: white;
+    background-color:#4dd2ff;
+    font-size: 12px;
+    font-weight:;
+    height:40px;
+    width:120px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.start-analysis-button-text:hover,
+.start-standard-button-text:hover {
+    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+}
+
+/* Ridicuulous. */
+.review-and-edit {
+    color:#4dd2ff;
+    margin: 0px 0 0px 0;
+    padding: 0 0 0 10px;
+}
+
+.review-and-edit p {
+    margin: 0px 0 0px 0;
+}
+
+#st1-r-and-e {
+    padding: 110px 0 0 0;
+}
+
+#st2a-r-and-e {
+    margin: -5px 0 0 0;
+}
+
+#st2b-r-and-e {
+    margin: 10px 0 0 0;
+}
+
+#st3a-r-and-e {
+    margin: -5px 0 0 0;
+}
+
+#st3b-r-and-e {
+    margin: 10px 0 0 0;
+}
+
+/* My Javascript function seems to work now: */
+#st4a-r-and-e {
+    margin: -5px 0 0 0;
+    visibility: hidden;
+}
+
+#st4b-r-and-e {
+    margin: 10px 0 0 0;
+    visibility: hidden;
+}
+
+/* Some use the visibility selector and some use display. Might need padding?: */
+#st4-score {
+    display: none;
+}
+
+#st1-score {
+    padding: 115px 0 0 0;
+}
+
+.score {
+    font-size: 20px;
+    font-weight: bold;
+    float:right;
+    margin: -10px 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.submit-button-box {
+    float:right;
+    margin-top: 0px;
+}
+
+.submit-button-text {
+    color: gray;
+    background-color:#999999;
+    font-size: 18px;
+    font-weight:bold;
+    height:45px;
+    width:120px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*--- What-Is-Meant (wim) ---*/
+
+/* Why do I need the ul, why not just the class?
+And why didn't it work when I used an id in the col-xs-8? */
+.uls-behave > ul {
+    margin-right: 75px;
+}
+
+#wim-vr {
+    color: #c2ae89;
+    border-left:1px solid;
+    height: 725px;
+
+}
+@media(min-height:800px) {
+    #wim-vr {
+        height:950px;
+    }
+}
+
+#OAR {
+    color:black;
+    margin-top: 50px;
+    padding-left: 10px;
+    border-left:10px solid #e6ac00;
+}
+
+/* The other next-button styles are in login-menu-page and healthy-relationships styling */
+#wim-next-button-bottom {
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+
+/* Healthy-Relationships (hr) ---*/
+
+#hr-wim-body {
+    margin-top: 50px;
+    padding-left: 50px;
+}
+#hr-body-row {
+}
+
+#pdf {
+    color:#4dd2ff;
+    float:right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#hr-heading {
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+/* Maybe it's OK to mix ids and classes on my style sheet? */
+.hr-subhead{
+    color:#ff9933;
+    margin-top: 20px;
+}
+
+.hr-paragraph {
+    margin-right: 75px;
+}
+
+#hr-vr {
+    color: #c2ae89;
+    border-left:1px solid;
+    height:1000px;
+}
+
+@media(min-height:800px) {
+    #hr-vr {
+        height:900px;
+    }
+}
+
+#resources {
+    color:black;
+    margin-top: 50px;
+    padding-left: 10px;
+    border-left:10px solid #e6ac00;
+}
+
+#link {
+    color:#4dd2ff !important;
+    padding-left: 2px;
+}
+
+/* The other next-button styles are in login-menu-page styling */
+#hr-next-button-box {
+}
+
+
+/*--- Login-Menu-Page ---*/
+
+#login-menu-page-menu {
+    color: white;
+    background-color: #ff531a;
+    padding-left: 10%;
+    padding-top: 100px; /* Keeps the white line away between navbar and the rest. */
+    padding-bottom: 100px;
+}
+
+#login-menu-page-bottom-text {
+    padding-left: 10%;
+}
+
+#latin-nonsense {
+    margin-top: 10px;
+}
+
+/* Name this better. */
+#next-button {
+    color: white;
+    background-color:#4dd2ff;
+    font-size: 16px;
+    font-weight:bold;
+    height:75px;
+    width:225px;
+    margin-top: 50px;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+#next-button:hover {
+    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+}
+
+/* Name this better. */
+#next-button-bottom {
+    font-size: 10px;
+    padding-top: 15px;
+}
+
+#lm-vr {
+    color: #c2ae89;
+    border-left:1px solid;
+    height:300px; /* 521 is max needed for iPad (which requires max-height. */
+    bottom:0;
+}
+
+@media(min-height:800px) {
+    #lm-vr {
+        height:521px;
+    }
+}
+
+.right-column {
+    background-color:#fff3cc;
+}
+
+
+/*--- Login-Page ---*/
+
+.body-standard {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login-heading {
+    color: black;
+    text-align: left;
+    margin-top: 100px;
+    padding-left: 10%; /* Wondering if % is a good/bad idea. */
+}
+
+#username-password {
+    color: #4ddbff;
+    text-align: left;
+    margin-top: 50px;
+    padding-left: 10%;
+}
+
+#username, #password {
+    color: black;
+}
+
+#password-retreival-account-creation {
+    text-align: right; /* Should this be in col? */
+}
+
+#go-button-box {
+    margin-top: 100px;
+    float: right;
+}
+
+#go-button-box:hover,
+#go-button-box:active
+#go-button-box:focus {
+    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+}
+
+#go-button-text {
+    color: white;
+    background-color:#4dd2ff;
+    font-size: 18px;
+    font-weight:bold;
+    height:30px;
+    width:150px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#go-button-text:hover,
+#go-button-text:active
+#go-button-text:focus {
+    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+}
+
+#go-submit {
+    background-color: none;
+}
+
+#password-retrieval-button {
+    color: #4ddbff;
+    margin-top: 35px;
+}
+
+#password-retrieval-button:hover {
+}
+
+#no-account {
+    font-weight: bold;
+    margin-top: 20px;
+    padding-right: 0%;
+}
+
+#account-creation-button {
+    color: #4ddbff;
+    font-weight: bold;
+    padding-right: 0%;
+}
+
+#account-creation-button:hover {
+}
+
+
+/*--- Index ---*/
+
+#home {
+
+    background-color: #ff531a;
+}
+
+#heading {
+    padding-top: 150px; /* Using this instead of margin-top prevents scrolling to nothing. */
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#heading-row {
+    color: white;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 500px;
+}
+
+#overview {
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#overview-row {
+    color: white;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:450px;
+}
+
+#get-started-button {
+    color: white;
+    background-color:#4dd2ff;
+    height:30px;
+    width:150px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+}
+
+#get-started-button-box:hover {
+    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+}
+
+#login-box {
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login-question {
+    margin-bottom: 0px; /* This overrides the <p> default. */
+    padding-top: 30px;
+}
+
+#login-button-text {
+    margin-top: 0px; /* This overrides the <h4> default. */
+}
