@@ -713,11 +713,11 @@ And why didn't it work when I used an id in the col-xs-8? */
     padding-left: 10%;
 }
 
-#username, #password {
+#username, #password, #email {
     color: black;
 }
 
-#password-retreival-account-creation {
+#password-retreival-account-creation, #back-to-login {
     text-align: right; /* Should this be in col? */
 }
 
@@ -753,7 +753,7 @@ And why didn't it work when I used an id in the col-xs-8? */
     background-color: none;
 }
 
-#password-retrieval-button {
+#password-retrieval-button, #back-to-login-button {
     color: #4ddbff;
     margin-top: 35px;
 }

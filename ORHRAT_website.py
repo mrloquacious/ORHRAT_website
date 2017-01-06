@@ -303,6 +303,9 @@ class ForgotPasswordPage(Handler):
     def get(self):
         self.render("forgot_password.html")
 
+    def post(self):
+        pass
+
 class LogoutPage(Handler):
     def get(self):
         self.response.headers.add_header('Set-Cookie', 'username=; Path=/')
