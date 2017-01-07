@@ -691,7 +691,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 
-/*--- Login-Page ---*/
+/*--- Login-Page, Signup-Page, Forgot-Password-Page ---*/
 
 .body-standard {
     max-width: 960px;
@@ -699,7 +699,7 @@ And why didn't it work when I used an id in the col-xs-8? */
     margin-right: auto;
 }
 
-#login-heading {
+#login-heading, #signup-heading, #password-reset-heading {
     color: black;
     text-align: left;
     margin-top: 100px;
@@ -713,26 +713,56 @@ And why didn't it work when I used an id in the col-xs-8? */
     padding-left: 10%;
 }
 
+#signup {
+    color: #4ddbff;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 50px;
+    padding-left: 10%;
+}
+
+#signup table input {
+    color: black;
+}
+
+.signup-error, .login-error {
+    color: black;
+    font-size: 14px;
+}
+
+
+
 #username, #password, #email {
     color: black;
 }
 
-#password-retreival-account-creation, #back-to-login {
+#password-retreival-account-creation, #back-to-login, #already-have-an-account {
     text-align: right; /* Should this be in col? */
 }
 
-#go-button-box {
+#signup-button-box {
+    margin-top: 50px;
+    float: right;
+}
+
+#go-button-box, #forgot-password-button-box {
     margin-top: 100px;
     float: right;
 }
 
 #go-button-box:hover,
-#go-button-box:active
-#go-button-box:focus {
-    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+#go-button-box:active,
+#go-button-box:focus,
+#signup-button-box:hover,
+#signup-button-box:active,
+#signup-button-box:focus,
+#forgot-password-button-box:hover,
+#forgot-password-button-box:active,
+#forgot-password-button-box:focus {
+    box-shadow: 1 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
 }
 
-#go-button-text {
+#go-button-text, #signup-button-text, #forgot-password-button-text {
     color: white;
     background-color:#4dd2ff;
     font-size: 18px;
@@ -744,8 +774,14 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #go-button-text:hover,
-#go-button-text:active
-#go-button-text:focus {
+#go-button-text:active,
+#go-button-text:focus,
+#signup-button-text:hover,
+#signup-button-text:active,
+#signup-button-text:focus,
+#forgot-password-button-text:hover,
+#forgot-password-button-text:active,
+#forgot-password-button-text:focus {
     box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
 }
 
@@ -761,13 +797,13 @@ And why didn't it work when I used an id in the col-xs-8? */
 #password-retrieval-button:hover {
 }
 
-#no-account {
+#no-account, #yes-account {
     font-weight: bold;
     margin-top: 20px;
     padding-right: 0%;
 }
 
-#account-creation-button {
+#account-creation-button, #already-have-an-account-button {
     color: #4ddbff;
     font-weight: bold;
     padding-right: 0%;
