@@ -31,7 +31,7 @@ body {
 #footer {
     height: 50px;
     color: black;
-    background-color: #c2ae89;
+    background-color: #c3b394;
     font-size: 18px;
     padding-left: 20px;
     padding-top: 10px;
@@ -58,8 +58,8 @@ input {
 input[type="text"]:focus,
 input[type="password"]:focus
 /*input[type="submit"]:active*/ {
-    border-color: #4dd2ff;
-    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+    border-color: #3bc9de; /*#3bc9de;*/
+    box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
     outline: 0 none;
 }
 
@@ -95,7 +95,7 @@ a:focus {
 /*--- Navbar ---*/
 
 .navbar {
-    background-color: #ff531a;
+    background-color: #ea4f23; /*#ea4f23;*/
     margin-bottom: 0px;
     border:none;
     border-radius: 0px; /* Overrides rounded .navbar corners */
@@ -144,7 +144,7 @@ a:focus {
 }
 
 #st4-pdf {
-    color:#4dd2ff;
+    color:#3bc9de;
     float:right;
     margin: 0px 0 0 0;
 }
@@ -155,7 +155,7 @@ a:focus {
 
 #st4-subhead {
     background-color: #fff7e6;
-    border-left: 7px solid #ff531a;
+    border-left: 7px solid #ea4f23;
     margin: 20px 0 0 0;
 }
 
@@ -235,9 +235,9 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 } */
 
 /*input[type="checkbox"]:active, input[type="checkbox"]:checked,input[type="checkbox"]:hover, input[type="checkbox"]:focus {
-    outline-color:#4dd2ff;
-    color: #4dd2ff;
-    background: #4dd2ff;
+    outline-color:#3bc9de;
+    color: #3bc9de;
+    background: #3bc9de;
 }
     color: black;
     background: black;
@@ -249,7 +249,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 
 .checkbox-even {
     max-width: 700px;
-    background-color: #fff7e6;
+    background-color: #f9f7f4 /*#fff7e6;*/
 }
 
 .checkbox-text {
@@ -257,7 +257,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 .checkbox-code {
-    color: #4dd2ff;
+    color: #3bc9de; /*#3bc9de;*/
 }
 
 #scoring {
@@ -269,7 +269,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #you-marked-number {
-    color: #4dd2ff;
+    color: #3bc9de;
     border-bottom: 2px solid #999999;
     /*text-decoration: underline;*/
     margin: 0 0 0 40px;
@@ -283,7 +283,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #your-score-number {
-    color: #4dd2ff;
+    color: #3bc9de;
     border-bottom: 2px solid #999999;
     /*text-decoration: underline;*/
     margin: 0 0 0 40px;
@@ -302,7 +302,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #go-back-button-text {
-    color: #4dd2ff;
+    color: #3bc9de;
     background-color:;
     font-size: 16px;
     font-weight:bold;
@@ -326,7 +326,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 
 #save-and-continue-button-text {
     color: white;
-    background-color:#999999;
+    background-color: #c2c2c2; /*#999999;*/
     border: 0px; /* This removes bootstrap styling, which is kind of cool.  May be best to style the other buttons like this, but I've removed style for consistancy. */
     font-size: 18px;
     height:75px;
@@ -336,7 +336,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #save-and-continue-button:hover {
-    box-shadow: 0 1px 1px #999999 inset, 0 0 8px #999999;
+    box-shadow: 0 1px 1px #c2c2c2 inset, 0 0 8px #c2c2c2;
 }
 
 #save-and-go-button-box {
@@ -346,7 +346,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 
 #save-and-go-button {
     color: white;
-    background-color:#4dd2ff;
+    background-color:#3bc9de;
     font-size: 18px;
     font-weight:;
     height:75px;
@@ -356,12 +356,12 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #save-and-go-actual-button {
-    background-color:#4dd2ff;
+    background-color:#3bc9de;
     border: 0px;
 }
 
 #save-and-go-button-text {
-    background-color: #4dd2ff;
+    background-color: #3bc9de;
 }
 
 #save-and-go-button-bottom-text {
@@ -372,7 +372,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #save-and-go-button:hover {
-    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+    box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
 }
 
 /*--- CAS (Curriculum Assessment Summary) ---*/
@@ -388,12 +388,12 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #cas-body hr {
-    border-top: 2px solid #999999;
+    border-top: 2px solid 414141; /*#999999;*/
     margin: 10px 0 10px 0;
 }
 
 .cas-number {
-    color: #999999;
+    color: #acacac; /*#c2c2c2;*/
     font-size: 48px;
     font-weight: bold;
 }
@@ -436,7 +436,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 
 .start-analysis-button-text {
     color: white;
-    background-color:#4dd2ff;
+    background-color:#3bc9de;
     font-size: 12px;
     font-weight:;
     height:40px;
@@ -447,7 +447,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 
 .start-standard-button-text {
     color: white;
-    background-color:#4dd2ff;
+    background-color:#3bc9de;
     font-size: 12px;
     font-weight:;
     height:40px;
@@ -458,12 +458,12 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 
 .start-analysis-button-text:hover,
 .start-standard-button-text:hover {
-    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+    box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
 }
 
 /* Ridicuulous. */
 .review-and-edit {
-    color:#4dd2ff;
+    color:#3bc9de;
     margin: 0px 0 0px 0;
     padding: 0 0 0 10px;
 }
@@ -526,8 +526,8 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 .submit-button-text {
-    color: gray;
-    background-color:#999999;
+    color: #959595; /*gray;*/
+    background-color:#c2c2c2;
     font-size: 18px;
     font-weight:bold;
     height:45px;
@@ -545,7 +545,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #wim-vr {
-    color: #c2ae89;
+    color: #c3b394; /*#edbc00; /*#c2ae89;*/
     border-left:1px solid;
     height: 725px;
 
@@ -560,7 +560,7 @@ And why didn't it work when I used an id in the col-xs-8? */
     color:black;
     margin-top: 50px;
     padding-left: 10px;
-    border-left:10px solid #e6ac00;
+    border-left:10px solid #edbc00; /*#e6ac00;*/
 }
 
 /* The other next-button styles are in login-menu-page and healthy-relationships styling */
@@ -580,7 +580,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #pdf {
-    color:#4dd2ff;
+    color:#3bc9de;
     float:right;
     margin-top: 10px;
     margin-right: 10px;
@@ -593,7 +593,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 
 /* Maybe it's OK to mix ids and classes on my style sheet? */
 .hr-subhead{
-    color:#ff9933;
+    color: #f59b2a; /*#ff9933;*/
     margin-top: 20px;
 }
 
@@ -602,7 +602,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #hr-vr {
-    color: #c2ae89;
+    color: #c3b394;
     border-left:1px solid;
     height:1000px;
 }
@@ -617,11 +617,11 @@ And why didn't it work when I used an id in the col-xs-8? */
     color:black;
     margin-top: 50px;
     padding-left: 10px;
-    border-left:10px solid #e6ac00;
+    border-left:10px solid #edbc00; /*#e6ac00;*/
 }
 
 #link {
-    color:#4dd2ff !important;
+    color:#3bc9de !important;
     padding-left: 2px;
 }
 
@@ -634,7 +634,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 
 #login-menu-page-menu {
     color: white;
-    background-color: #ff531a;
+    background-color: #ea4f23;
     padding-left: 10%;
     padding-top: 100px; /* Keeps the white line away between navbar and the rest. */
     padding-bottom: 100px;
@@ -651,7 +651,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 /* Name this better. */
 #next-button {
     color: white;
-    background-color:#4dd2ff;
+    background-color:#3bc9de;
     font-size: 16px;
     font-weight:bold;
     height:75px;
@@ -664,7 +664,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #next-button:hover {
-    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+    box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
 }
 
 /* Name this better. */
@@ -687,7 +687,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 .right-column {
-    background-color:#fff3cc;
+    background-color: #fffaef /*#fff3cc;*/
 }
 
 
@@ -707,14 +707,14 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #username-password {
-    color: #4ddbff;
+    color: #3bc9de; /*#4ddbff;*/
     text-align: left;
     margin-top: 50px;
     padding-left: 10%;
 }
 
 #signup {
-    color: #4ddbff;
+    color: #3bc9de;
     font-size: 24px;
     text-align: left;
     margin-top: 50px;
@@ -759,12 +759,12 @@ And why didn't it work when I used an id in the col-xs-8? */
 #forgot-password-button-box:hover,
 #forgot-password-button-box:active,
 #forgot-password-button-box:focus {
-    box-shadow: 1 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+    box-shadow: 1 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
 }
 
 #go-button-text, #signup-button-text, #forgot-password-button-text {
     color: white;
-    background-color:#4dd2ff;
+    background-color:#3bc9de;
     font-size: 18px;
     font-weight:bold;
     height:30px;
@@ -782,7 +782,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 #forgot-password-button-text:hover,
 #forgot-password-button-text:active,
 #forgot-password-button-text:focus {
-    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+    box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
 }
 
 #go-submit {
@@ -790,7 +790,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #password-retrieval-button, #back-to-login-button {
-    color: #4ddbff;
+    color: #3bc9de;
     margin-top: 35px;
 }
 
@@ -804,7 +804,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #account-creation-button, #already-have-an-account-button {
-    color: #4ddbff;
+    color: #3bc9de;
     font-weight: bold;
     padding-right: 0%;
 }
@@ -817,7 +817,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 
 #home {
 
-    background-color: #ff531a;
+    background-color: #ea4f23;
 }
 
 #heading {
@@ -851,7 +851,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 
 #get-started-button {
     color: white;
-    background-color:#4dd2ff;
+    background-color:#3bc9de;
     height:30px;
     width:150px;
     text-align: center;
@@ -861,7 +861,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #get-started-button-box:hover {
-    box-shadow: 0 1px 1px #4dd2ff inset, 0 0 8px #4dd2ff;
+    box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
 }
 
 #login-box {
