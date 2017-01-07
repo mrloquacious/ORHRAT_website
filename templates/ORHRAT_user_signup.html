@@ -1,34 +1,93 @@
-<!-- form="""-->
-<html>
-    <body>
-        <h2>Signup</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--the line below is from frontend-nanodegree-resume-master.Some sources don't include "type="text/css" - why not?-->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <script src="js/jquery-1.12.0.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/javascript.js"></script>
+</head>
+
+<body class="body-standard">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid clear">
+      <div class="navbar-header">
+        <a href="index.html" ><span class="navbar-brand">ORHRAT</span></a>
+        <div id="hamburg">
+          <a href="login-menu.html"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid clear">
+
+    <div class="row clear">
+      <div class="col-xs-8" id="signup-heading">
+        <h3>SIGNUP</h3>
+      </div>
+      <div class="col-xs-4">
+      </div>
+    </div> <!--End of row.-->
+
+    <div class="row clear">
+      <div class="col-xs-8"  id="signup">
         <form method="post">
-            <table>
-                <tbody>
-                    <tr>
-                        <td style="text-align:right">Username <input type="text" name= "username" value="{{username}}"></td><td style="color: red">{{username_error}}</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:right">Password <input type="password" name= "password" value="{{password}}"></td><td style="color: red">{{password_error}}</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:right">Verify Password <input type="password" name= "verify" value="{{verify}}"></td><td style="color: red">{{verify_error}}</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:right">First Name <input type="text" name= "firstname" value="{{firstname}}"></td><td style="color: red">{{firstname_error}}</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:right">Last Name <input type="text" name= "lastname" value="{{lastname}}"></td><td style="color: red">{{lastname_error}}</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align:right">Organization <input type="text" name= "organization" value="{{organization}}"></td><td style="color: red">{{organization_error}}</td>
-                    </tr>
-                        <td style="text-align:right">Email <input type="text" name= "email" value="{{email}}"></td><td style="color: red">{{email_error}}</td>
-                    </tr>
-                </tbody>
-            </table>
-            <input type="submit">
-        </form>
-    </body>
+          <table>
+            <tbody>
+              <tr>
+                <td><h4>Username <input type="text" name= "username" value="{{username}}"></h4></td><td class="signup-error">{{username_error}}</td>
+              </tr>
+              <tr>
+                <td><h4>Password <input type="password" name= "password" value="{{password}}" ></h4></td><td class="signup-error"{{password_error}}></td>
+              </tr>
+              <tr>
+                <td><h4>Verify <input type="password" name= "verify" value="{{verify}}"></h4></td><td class="signup-error">{{verify_error}}</td>
+              </tr>
+              <tr>
+                <td><h4>First Name <input type="text" name= "firstname" value="{{firstname}}"></h4></td><td class="signup-error">{{firstname_error}}</td>
+              </tr>
+              <tr>
+                <td><h4>Last Name <input type="text" name= "lastname" value="{{lastname}}"></h4></td><td class="signup-error">{{lastname_error}}</td>
+              </tr>
+              <tr>
+                <td><h4>Organization <input type="text" name= "organization" value="{{organization}}"></h4></td><td class="signup-error">{{organization_error}}</td>
+              </tr>
+                <td><h4>Email <input type="text" name= "email" value="{{email}}"></h4></td><td class="signup-error">{{email_error}}</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="signup-button-box">
+            <input type="submit" id="signup-button-text" value="Signup">
+          </div>
+<!--           <input type="submit">
+ -->        </form>
+      </div>
+      <div class="col-xs-4">
+      </div>
+    </div>
+
+    <div class="row clear">
+      <div class="col-xs-8" id="already-have-an-account">
+          <h6 id="yes-account">Already have an account?</h6>
+          <a href="login.html"><h6 id="already-have-an-account-button">Login</h6></a>
+        </div>
+
+      <div class="col-xs-4">
+      </div>
+    </div>
+
+  </div> <!-- End of container. -->
+</body>
 </html>
-<!-- """ -->
