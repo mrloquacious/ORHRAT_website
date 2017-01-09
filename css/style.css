@@ -14,6 +14,7 @@ html, body {
 }
 
 body {
+    font-family: "Roboto Condensed", Helvetica, sans-serif;
 /*   overflow: hidden; Not this, but close */
 }
 
@@ -821,10 +822,16 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #heading {
-    padding-top: 150px; /* Using this instead of margin-top prevents scrolling to nothing. */
+
+/*    font-family: "Roboto Condensed", Helvetica, sans-serif;
+*/    padding-top: 150px; /* Using this instead of margin-top prevents scrolling to nothing. */
     margin-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+#heading h1 {
+    font-weight: bold;
 }
 
 #heading-row {
@@ -832,7 +839,7 @@ And why didn't it work when I used an id in the col-xs-8? */
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 #overview {
