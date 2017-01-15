@@ -475,7 +475,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #st1-r-and-e {
-    padding: 25% 0 0 0;
+      margin: -5px 0 0px 0;
 /*    padding: 110px 0 0 0;
 */}
 
@@ -512,7 +512,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #st1-score {
-    padding: 10% 0 0 0;
+      padding: 0 0 0 0;
 /*    padding: 115px 0 0 0;
 */}
 
