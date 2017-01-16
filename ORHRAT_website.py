@@ -314,8 +314,17 @@ class LogoutPage(Handler):
 
 class CASPage(Handler):
     def get(self):
-        st4a_score = self.request.cookies.get('st4a_score')
-        self.render("CAS.html", st4a_score=st4a_score)
+        un_hash = self.request.cookies.get('username')
+        un = un_hash.split('|')[0]
+        cookie = check_secure_val(un_hash)
+
+        if cookie == None:
+            self.response.headers.add_header('Set-Cookie', 'username =; Path=/')
+            self.redirect("/")
+
+        else:
+            st4a_score = self.request.cookies.get('st4a_score')
+            self.render("CAS.html", st4a_score=st4a_score)
 
 # *** Why is it easier (more intuitive for me, at least) to have this outside the class that uses it?  How do I modify the function so it's stored inside the class? ... Come to think of it, if I have a class for every Standard, I need the function outside the class.
 # Convert for HTML stynax:
@@ -419,4 +428,4 @@ class Standard4Page(Handler):
             self.render("standard_4.html", score=score, cbox_count=cbox_count, **checkboxes)
 
 # GAE interface:
-app = webapp2.WSGIApplication([('/', SignupPage), ('/login', LoginPage), ('/logout', LogoutPage), ('/index.html', IndexPage), ('/login.html', LoginPage), ('/login-menu.html', LoginMenuPage), ('/healthy_relationships.html', HealthyRelationshipsPage), ('/what_is_meant.html', WhatIsMeantPage), ('/ORHRAT_user_signup.html', SignupPage), ('/CAS.html', CASPage), ('/standard_4.html', Standard4Page), ('/forgot_password.html', ForgotPasswordPage)], debug=True)
+app = webapp2.WSGIApplication([('/', SignupPage), ('/login', LoginPage), ('/logout', LogoutPage), ('/index.html', IndexPage), ('/login.html', LoginPage), ('/login-menu.html', LoginMenuPage), ('/healthy_relationships.html', HealthyRelationshipsPage), ('/what_is_meant.html', WhatIsMeantPage), ('/ORHRAT_user_signup.html', SignupPage), ('/CAS.html', CASPage), ('/CAS', CASPage), ('/standard_4.html', Standard4Page), ('/forgot_password.html', ForgotPasswordPage)], debug=True)
