@@ -15,3 +15,8 @@ indexes:
   - name: question
   - name: username
   - name: cboxstate
+
+- kind: Users
+  properties:
+  - name: username
+  - name: salt
