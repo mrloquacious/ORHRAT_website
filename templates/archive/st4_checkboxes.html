@@ -1,0 +1,30 @@
+<!-- Eventually I should add the head and such: -->
+<!-- Refer back to Template Inheritance when the time is right. -->
+<!-- form ="""-->
+<form method="post" id="st4-form">
+  <div class="row clear" id="checkbox-list">
+
+    <div class="checkbox-odd">
+      <label for="cbox1" class="checkbox-text"><input type="checkbox" name="st4_first" {{st4_first}}> Analyze the influence of friends, family, media, society, and culture on the expression of gender, sexual oriendtation and identity.</label><br>
+    </div>
+
+    <div class="checkbox-even">
+      <label for="cbox2" class="checkbox-text"><input type="checkbox" id="cbox2" name="st4_second" {{st4_second}} onclick="checkThis()"><span class="fake-textbox"></span> Analyze external influences and societal messages that impact attitudes about bullying, sexual harassment, sexual abuse, sexual assault, incest, rape, and dating violence. (<span class="checkbox-code">PS.12.INF.2</span>)</label><br>
+    </div>
+
+    <div id="save-and-continue-button">
+      <button type="submit" id="save-and-continue-button-text" form="st4-form">Save and<br>Continue Editing</button>
+    </div>
+
+  </div>
+</form>
+<!-- """ -->
+
+<!-- jinja variables -->
+<!-- {{st4_first}} replaces %(st4_first)s -->
+<!-- {{st4_second}} replaces %(st4_second)s -->
+
+
+<!--       {% if st4_first == "on" %}
+        st4_first = "checked"
+      {% endif %} -->
