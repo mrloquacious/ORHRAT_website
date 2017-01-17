@@ -885,8 +885,8 @@ And why didn't it work when I used an id in the col-xs-8? */
     /*padding-top: 5px;*/
 }
 
-#get-started-button-box:hover {
-    box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
+#get-started-button:hover {
+    box-shadow: 0 1px 1px #3bc9de inset, 0 0 20px #3bc9de;
 }
 
 #login-box {
