@@ -78,7 +78,7 @@ SECRET = 'imsosecret'
 
 # These 3 functions are for hashing and salting passwords and authentication:
 def make_salt():
-    return ''.join(random.choice(string.letters) for x in xrange(5))
+    return ''.join(random.choice(string.letters) for x in xrange(20))
 
 # Should this be generated with hmac or bcrypt instead of sha256?:
 def make_pw_hash(name, pw, salt=None):
