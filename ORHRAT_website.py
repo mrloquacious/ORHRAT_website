@@ -7,6 +7,7 @@ import os
 import jinja2
 import hmac
 from google.appengine.ext import db
+from module import SECRET
 
 # Set up the Jinja2 template filesystem:
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
@@ -74,7 +75,7 @@ def check_secure_val(h):
         return val
 
 ##### Where do I put this for real?:
-SECRET = 'imsosecret'
+# SECRET = 'imsosecret'
 
 # These 3 functions are for hashing and salting passwords and authentication:
 def make_salt():
