@@ -429,4 +429,4 @@ class Standard4Page(Handler):
             self.render("standard_4.html", score=score, cbox_count=cbox_count, **checkboxes)
 
 # GAE interface:
-app = webapp2.WSGIApplication([('/', SignupPage), ('/login', LoginPage), ('/logout', LogoutPage), ('/index.html', IndexPage), ('/login.html', LoginPage), ('/login-menu.html', LoginMenuPage), ('/healthy_relationships.html', HealthyRelationshipsPage), ('/what_is_meant.html', WhatIsMeantPage), ('/ORHRAT_user_signup.html', SignupPage), ('/CAS.html', CASPage), ('/CAS', CASPage), ('/standard_4.html', Standard4Page), ('/forgot_password.html', ForgotPasswordPage)], debug=True)
+app = webapp2.WSGIApplication([('/', IndexPage), ('/login', LoginPage), ('/logout', LogoutPage), ('/index.html', IndexPage), ('/login.html', LoginPage), ('/login-menu.html', LoginMenuPage), ('/healthy_relationships.html', HealthyRelationshipsPage), ('/what_is_meant.html', WhatIsMeantPage), ('/ORHRAT_user_signup.html', SignupPage), ('/CAS.html', CASPage), ('/CAS', CASPage), ('/standard_4.html', Standard4Page), ('/forgot_password.html', ForgotPasswordPage)], debug=True)
