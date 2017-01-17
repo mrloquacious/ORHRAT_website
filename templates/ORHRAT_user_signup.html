@@ -44,6 +44,47 @@
     <div class="row clear">
       <div class="col-xs-8"  id="signup">
         <form method="post">
+          <label><h4>Username</h4></label>
+            <h4><input type="text" name= "username" value="{{username}}"></h4>
+              <span class="signup-error">{{username_error}}</span>
+              <hr>
+          <label><h4>Password</h4></label>
+            <h4><input type="password" name= "password" value="{{password}}"></h4>
+              <span class="signup-error"{{password_error}}></span>
+              <hr>
+          <label><h4>Verify</h4></label>
+            <h4><input type="password" name= "verify" value="{{verify}}"></h4>
+              <span class="signup-error">{{verify_error}}</span>
+              <hr>
+          <label><h4>First Name</h4></label>
+            <h4><input type="text" name= "firstname" value="{{firstname}}"></h4>
+              <span class="signup-error">{{firstname_error}}</span>
+              <hr>
+          <label><h4>Last Name</h4></label>
+            <h4><input type="text" name= "lastname" value="{{lastname}}"></h4>
+              <span class="signup-error">{{lastname_error}}</span>
+              <hr>
+          <label><h4>Organization</h4></label>
+              <h4><input type="text" name= "organization" value="{{organization}}"></h4>
+              <span class="signup-error">{{organization_error}}</span>
+              <hr>
+          <label><h4>Email</h4></label>
+              <h4><input type="text" name= "email" value="{{email}}"></h4>
+              <span class="signup-error">{{email_error}}</span>
+              <hr>
+
+          <div id="signup-button-box">
+            <input type="submit" id="signup-button-text" value="Signup">
+          </div>
+        </form>
+      </div>
+      <div class="col-xs-4">
+      </div>
+    </div>
+
+<!--     <div class="row clear">
+      <div class="col-xs-8"  id="signup">
+        <form method="post">
           <table>
             <tbody>
               <tr>
@@ -71,12 +112,11 @@
           <div id="signup-button-box">
             <input type="submit" id="signup-button-text" value="Signup">
           </div>
-<!--           <input type="submit">
- -->        </form>
+        </form>
       </div>
       <div class="col-xs-4">
       </div>
-    </div>
+    </div> -->
 
     <div class="row clear">
       <div class="col-xs-8" id="already-have-an-account">

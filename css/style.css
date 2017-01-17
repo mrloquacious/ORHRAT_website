@@ -390,7 +390,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #cas-body hr {
-    border-top: 2px solid 414141; /*#999999;*/
+    border-top: 2px solid #414141; /*#999999;*/
     margin: 10px 0 10px 0;
 }
 
@@ -717,6 +717,13 @@ And why didn't it work when I used an id in the col-xs-8? */
     padding-left: 10%;
 }
 
+#username-email {
+    color: #3bc9de; /*#4ddbff;*/
+    text-align: left;
+    margin-top: 50px;
+    padding-left: 10%;
+}
+
 #signup {
     color: #3bc9de;
     font-size: 24px;
@@ -725,16 +732,44 @@ And why didn't it work when I used an id in the col-xs-8? */
     padding-left: 10%;
 }
 
-#signup table input {
-    color: black;
+#signup label {
+    display: block;
+    float: left;
+    min-width: 110px;
 }
+
+#signup input {
+    margin-top: 10px;
+}
+
+/*#signup table input {
+    color: black;
+}*/
 
 .signup-error, .login-error {
     color: black;
     font-size: 14px;
 }
 
+#username-email label {
+  display: block;
+  float: left;
+  min-width: 115px;
+}
 
+#username-email input {
+    margin-top: 20px;
+}
+
+#username-password label {
+  display: block;
+  float: left;
+  min-width: 115px;
+}
+
+#username-password input {
+    margin-top: 20px;
+}
 
 #username, #password, #email {
     color: black;

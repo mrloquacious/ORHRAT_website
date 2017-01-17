@@ -42,15 +42,13 @@
 
     <div class="row clear">
       <div class="col-xs-8" id="username-password">
-        <form method="post"> <!--class="input"-->
-          <label><h3>Username
-            <input type="text" name="username" id="username" value="{{username}}"></h3>
-          </label>
+        <form method="post">
+          <label><h3>Username</h3></label>
+            <h3><input type="text" name="username" id="username" value="{{username}}"></h3>
           <span class="login-error">{{login_error}}</span>
           <hr>
-          <label for="password"><h3>Password
-            <input type="password" name="password" id="password" value="{{password}}"></h3>
-          </label>
+          <label><h3>Password</h3></label>
+            <h3><input type="password" name="password" id="password" value="{{password}}"></h3>
           <hr>
           <div id="go-button-box">
             <input type="submit" id="go-button-text" value="Go">
