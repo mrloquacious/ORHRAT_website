@@ -96,20 +96,22 @@ a:focus {
 /*--- Navbar ---*/
 
 .navbar {
-    background-color: #ea4f23; /*#ea4f23;*/
+    background-color: #ea4f23;    /*#ea4f23;*/
     margin-bottom: 0px;
     border:none;
-    border-radius: 0px; /* Overrides rounded .navbar corners */
-/*    max-width:960px;
-*/    margin-right: auto;
+    border-radius: 0px;    /* Overrides rounded .navbar corners */
+    /*max-width:960px;*/
+    margin-right: auto;
     margin-left:auto;
+    height:140px;
 }
 
 .navbar-brand {
     /* For now, this has to be here: */
     color: white !important;
-    font-size: 24px; /* Overrides .navbar-brand font-size.*/
-    padding-left: 40px; /* Overrides .navbar-brand shite.*/
+    font-size: 64px;/*font-size: 24px;*/    /* Overrides .navbar-brand font-size.*/
+    padding-left: 60px; /*40px;*/    /* Overrides .navbar-brand shite.*/
+    padding-top: 60px;
 }
 
 .navbar-brand:hover {
@@ -118,11 +120,11 @@ a:focus {
 
 /* For some reason everything totally changes if .hamburg is a class.  So, it has to be an id, I guess. */
 #hamburg {
-    font-size: 24px;
+    font-size: 64px; /*font-size: 24px;*/
     color:white;
-    padding-top: 10px;
+    padding-top: 30px; /*10px;*/
     position: absolute;
-    right: 20px;
+    right: 40px; /*20px;*/
 }
 
 .login-menu-hamburg {
@@ -698,23 +700,33 @@ And why didn't it work when I used an id in the col-xs-8? */
 /*--- Login-Page, Signup-Page, Forgot-Password-Page ---*/
 
 .body-standard {
-/*    max-width: 960px;
-*/    margin-left: auto;
+    /*max-width: 960px;*/
+    margin-left: auto;
     margin-right: auto;
 }
 
 #login-heading, #signup-heading, #password-reset-heading {
     color: black;
     text-align: left;
-    margin-top: 100px;
-    padding-left: 10%; /* Wondering if % is a good/bad idea. */
+    margin-top: 280px; /*100px;*/
+    padding-left: 150px; /*10%;*/ /* Wondering if % is a good/bad idea. */
+}
+
+#login-heading h3 {
+    font-size: 64px;
+    font-weight: bold;
 }
 
 #username-password, #username-email, #signup {
     color: #3bc9de; /*#4ddbff;*/
     text-align: left;
     margin-top: 50px;
-    padding-left: 10%;
+    padding-left: 150px; /*10%;*/
+}
+
+#username-password h3 {
+    font-size: 64px;
+    font-weight: bold;
 }
 
 #username-password hr, #username-email hr, #signup hr {
@@ -744,7 +756,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 #username-password label, #username-email label {
   display: block;
   float: left;
-  min-width: 115px;
+  min-width: 115px; /*115px;*/
 }
 
 #username-password input, #username-email input {
