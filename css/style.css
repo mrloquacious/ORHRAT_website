@@ -38,11 +38,9 @@ body {
     padding-top: 10px;
     height: 50px;
     width:100%;
-/*    max-width: 960px;
-*/    bottom:0; /* I think this is redundant - .navbar-fixed-bottom. */
+    bottom:0; /* I think this is redundant - .navbar-fixed-bottom. */
     position:fixed;
 }
-
 
 /*--- General ---*/
 
@@ -57,20 +55,11 @@ input {
 }
 
 input[type="text"]:focus,
-input[type="password"]:focus
-/*input[type="submit"]:active*/ {
-    border-color: #3bc9de; /*#3bc9de;*/
+input[type="password"]:focus {
+    border-color: #3bc9de;
     box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
     outline: 0 none;
 }
-
-/*input[type=checkbox] {
-     background: red;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    height: 16px;
-    width: 16px;
-}*/
 
 a,
 a:hover,
@@ -85,18 +74,16 @@ a:focus {
     padding: 0px;
 }
 
-
 /*--- Login-Menu-Page ---*/
 
 .align-right {
     float: right;
 }
 
-
 /*--- Navbar ---*/
 
 .navbar {
-    background-color: #ea4f23;    /*#ea4f23;*/
+    background-color: #ea4f23;
     margin-bottom: 0px;
     border:none;
     border-radius: 0px;    /* Overrides rounded .navbar corners */
@@ -131,10 +118,6 @@ a:focus {
     transform: rotate(90deg);
 }
 
-
-/*--- IDs ---*/
-
-
 /*--- Standard 4 (st4)---*/
 
 #st4-body {
@@ -167,7 +150,6 @@ a:focus {
 }
 
 #st4-form {
-
 }
 
 #checkbox-header {
@@ -204,49 +186,6 @@ label .fake-textbox {/* <-- style the artificial checkbox */
   left: -1px;
 }
 
-/*
-.custom-checkbox {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    top: 3px;
-    background: url("checkbox.png") no-repeat;
-}
-
-.custom-checkbox:hover{
-    background: url("checkbox-hover.png") no-repeat;
-}
-
-.custom-checkbox.selected{
-    background: url("checkbox-selected.png") no-repeat;
-}
-
-.custom-checkbox input[type="checkbox"]{
-    margin: 0;
-    position: absolute;
-    z-index: 2;
-    cursor: pointer;
-    outline: none;
-    opacity: 0;
-    /* CSS hacks for older browsers */
-/*    _noFocusLine: expression(this.hideFocus=true);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    filter: alpha(opacity=0);
-    -khtml-opacity: 0;
-    -moz-opacity: 0;
-} */
-
-/*input[type="checkbox"]:active, input[type="checkbox"]:checked,input[type="checkbox"]:hover, input[type="checkbox"]:focus {
-    outline-color:#3bc9de;
-    color: #3bc9de;
-    background: #3bc9de;
-}
-    color: black;
-    background: black;
-}*/
-
 .checkbox-odd {
     max-width: 700px;
 }
@@ -261,7 +200,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 .checkbox-code {
-    color: #3bc9de; /*#3bc9de;*/
+    color: #3bc9de;
 }
 
 #scoring {
@@ -275,7 +214,6 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 #you-marked-number {
     color: #3bc9de;
     border-bottom: 2px solid #999999;
-    /*text-decoration: underline;*/
     margin: 0 0 0 40px;
 }
 
@@ -289,7 +227,6 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 #your-score-number {
     color: #3bc9de;
     border-bottom: 2px solid #999999;
-    /*text-decoration: underline;*/
     margin: 0 0 0 40px;
 }
 
@@ -330,7 +267,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 
 #save-and-continue-button-text {
     color: white;
-    background-color: #c2c2c2; /*#999999;*/
+    background-color: #c2c2c2;
     border: 0px; /* This removes bootstrap styling, which is kind of cool.  May be best to style the other buttons like this, but I've removed style for consistancy. */
     font-size: 18px;
     height:75px;
@@ -392,12 +329,12 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #cas-body hr {
-    border-top: 1px solid #414143; /*#999999;*/
+    border-top: 1px solid #414143;
     margin: 10px 0 10px 0;
 }
 
 .cas-number {
-    color: #acacac; /*#c2c2c2;*/
+    color: #acacac;
     font-size: 48px;
     font-weight: bold;
 }
@@ -477,9 +414,9 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #st1-r-and-e {
-      margin: -5px 0 0px 0;
-/*    padding: 110px 0 0 0;
-*/}
+    margin: -5px 0 0px 0;
+    /* padding: 110px 0 0 0; */
+}
 
 #st2a-r-and-e {
     margin: -5px 0 0 0;
@@ -514,9 +451,9 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #st1-score {
-      padding: 0 0 0 0;
-/*    padding: 115px 0 0 0;
-*/}
+    padding: 0 0 0 0;
+    /* padding: 115px 0 0 0; */
+}
 
 .score {
     font-size: 20px;
@@ -532,7 +469,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 .submit-button-text {
-    color: #959595; /*gray;*/
+    color: #959595;
     background-color:#c2c2c2;
     font-size: 18px;
     font-weight:bold;
@@ -551,11 +488,11 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #wim-vr {
-    color: #c3b394; /*#edbc00; /*#c2ae89;*/
+    color: #c3b394;
     border-left:1px solid;
     height: 725px;
-
 }
+
 @media(min-height:800px) {
     #wim-vr {
         height:950px;
@@ -566,7 +503,7 @@ And why didn't it work when I used an id in the col-xs-8? */
     color:black;
     margin-top: 50px;
     padding-left: 10px;
-    border-left:10px solid #edbc00; /*#e6ac00;*/
+    border-left:10px solid #edbc00;
 }
 
 /* The other next-button styles are in login-menu-page and healthy-relationships styling */
@@ -597,9 +534,8 @@ And why didn't it work when I used an id in the col-xs-8? */
     padding-top: 20px;
 }
 
-/* Maybe it's OK to mix ids and classes on my style sheet? */
 .hr-subhead{
-    color: #f59b2a; /*#ff9933;*/
+    color: #f59b2a;
     margin-top: 20px;
 }
 
@@ -623,7 +559,7 @@ And why didn't it work when I used an id in the col-xs-8? */
     color:black;
     margin-top: 50px;
     padding-left: 10px;
-    border-left:10px solid #edbc00; /*#e6ac00;*/
+    border-left:10px solid #edbc00;
 }
 
 #link {
@@ -654,7 +590,6 @@ And why didn't it work when I used an id in the col-xs-8? */
     margin-top: 10px;
 }
 
-/* Name this better. */
 #next-button {
     color: white;
     background-color:#3bc9de;
@@ -673,7 +608,6 @@ And why didn't it work when I used an id in the col-xs-8? */
     box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
 }
 
-/* Name this better. */
 #next-button-bottom {
     font-size: 10px;
     padding-top: 15px;
@@ -682,7 +616,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 #lm-vr {
     color: #c2ae89;
     border-left:1px solid;
-    height:300px; /* 521 is max needed for iPad (which requires max-height. */
+    height:300px; /* 521 is max needed for iPad (which requires max-height). */
     bottom:0;
 }
 
@@ -700,7 +634,6 @@ And why didn't it work when I used an id in the col-xs-8? */
 /*--- Login-Page, Signup-Page, Forgot-Password-Page ---*/
 
 .body-standard {
-    /*max-width: 960px;*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -718,7 +651,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #username-password, #username-email, #signup {
-    color: #3bc9de; /*#4ddbff;*/
+    color: #3bc9de;
     text-align: left;
     margin-top: 50px;
     padding-left: 150px; /*10%;*/
@@ -731,8 +664,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 
 #username-password hr, #username-email hr, #signup hr {
     border-top: 1px solid #414143;
-/*    margin: 10px 0 10px 0;
-*/}
+}
 
 #signup {
     font-size: 24px;
