@@ -763,8 +763,12 @@ And why didn't it work when I used an id in the col-xs-8? */
     margin-top: 20px;
 }
 
-#username, #password, #email {
+#username, #password, #email, #signup-username, #signup-password, #verify, #firstname, #lastname, #organization, #signup-email {
     color: black;
+}
+
+#signup-username, #signup-password, #verify, #firstname, #lastname, #organization, #signup-email {
+    font-size: 18px;
 }
 
 #password-retreival-account-creation, #back-to-login, #already-have-an-account {
