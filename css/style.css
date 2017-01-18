@@ -90,15 +90,15 @@ a:focus {
     /*max-width:960px;*/
     margin-right: auto;
     margin-left:auto;
-    height:140px;
+    /*height:140px;*/
 }
 
 .navbar-brand {
     /* For now, this has to be here: */
     color: white !important;
-    font-size: 64px;/*font-size: 24px;*/    /* Overrides .navbar-brand font-size.*/
-    padding-left: 60px; /*40px;*/    /* Overrides .navbar-brand shite.*/
-    padding-top: 60px;
+    font-size: 24px; /*64px;*/    /* Overrides .navbar-brand font-size.*/
+    padding-left: 40px; /*60px;*/    /* Overrides .navbar-brand shite.*/
+    /*padding-top: 60px;*/
 }
 
 .navbar-brand:hover {
@@ -107,11 +107,11 @@ a:focus {
 
 /* For some reason everything totally changes if .hamburg is a class.  So, it has to be an id, I guess. */
 #hamburg {
-    font-size: 64px; /*font-size: 24px;*/
+    font-size: 24px; /*64px;*/
     color:white;
-    padding-top: 30px; /*10px;*/
+    padding-top: 10px; /*30px;*/
     position: absolute;
-    right: 40px; /*20px;*/
+    right: 20px; /*40px;*/
 }
 
 .login-menu-hamburg {
@@ -641,25 +641,25 @@ And why didn't it work when I used an id in the col-xs-8? */
 #login-heading, #signup-heading, #password-reset-heading {
     color: black;
     text-align: left;
-    margin-top: 280px; /*100px;*/
-    padding-left: 150px; /*10%;*/ /* Wondering if % is a good/bad idea. */
+    margin-top: 100px; /*280px;*/
+    padding-left: 10%; /*150px;*/ /* Wondering if % is a good/bad idea. */
 }
 
 #login-heading h3 {
-    font-size: 64px;
-    font-weight: bold;
+    /*font-size: 64px;*/
+    /*font-weight: bold;*/
 }
 
 #username-password, #username-email, #signup {
     color: #3bc9de;
     text-align: left;
     margin-top: 50px;
-    padding-left: 150px; /*10%;*/
+    padding-left: 10%; /*150px;*/
 }
 
 #username-password h3 {
-    font-size: 64px;
-    font-weight: bold;
+    /*font-size: 64px;*/
+    /*font-weight: bold;*/
 }
 
 #username-password hr, #username-email hr, #signup hr {
@@ -688,7 +688,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 #username-password label, #username-email label {
   display: block;
   float: left;
-  min-width: 115px; /*115px;*/
+  min-width: 115px;
 }
 
 #username-password input, #username-email input {
