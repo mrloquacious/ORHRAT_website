@@ -666,18 +666,14 @@ And why didn't it work when I used an id in the col-xs-8? */
     border-top: 1px solid #414143;
 }
 
-#signup {
-    font-size: 24px;
-}
-
 #signup label {
     display: block;
     float: left;
-    min-width: 110px;
+    min-width: 120px;
 }
 
 #signup input {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .signup-error, .login-error {
@@ -688,11 +684,15 @@ And why didn't it work when I used an id in the col-xs-8? */
 #username-password label, #username-email label {
   display: block;
   float: left;
-  min-width: 115px;
+  min-width: 130px;
 }
 
 #username-password input, #username-email input {
-    margin-top: 20px;
+    margin-top: 15px;
+}
+
+#username, #password, #email {
+    font-size: 24px;
 }
 
 #username, #password, #email, #signup-username, #signup-password, #verify, #firstname, #lastname, #organization, #signup-email {
