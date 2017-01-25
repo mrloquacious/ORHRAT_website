@@ -74,7 +74,7 @@ def check_secure_val(h):
     if h == make_secure_val(val):
         return val
 
-##### Where do I put this for real?:
+##### Where do I put this for real? Now it's in a separate module:
 # SECRET = 'imsosecret'
 
 # These 3 functions are for hashing and salting passwords and authentication:
@@ -97,7 +97,6 @@ class Users(db.Model):
 
     username = db.StringProperty(required = True)
     password = db.StringProperty(required = True)
-    salt = db.StringProperty(required = True)
     firstname = db.StringProperty(required = True)
     lastname = db.StringProperty(required = True)
     organization = db.StringProperty(required = True)
@@ -180,12 +179,10 @@ class SignupPage(Handler):
             # If the user enters data properly:
             else:
                 # Hash the password:
-                h = make_pw_hash(username, password, salt = None)
-                hashed_pw = h.split('|')[0]
-                salt = h.split('|')[1]
+                h = make_pw_hash(username, password) #, salt = None)
 
                  # Enter valid data into database:
-                users = Users(key_name=username, username=username, password=hashed_pw, salt=salt, firstname=firstname, lastname=lastname, organization=organization, email=email)
+                users = Users(key_name=username, username=username, password=h, firstname=firstname, lastname=lastname, organization=organization, email=email)
                 users.put()
 
                 # Hash cookie:
@@ -239,22 +236,19 @@ class LoginPage(Handler):
 
         # If username is valid, check password hash:
         if username_val:
-            # Get the salt for the username from the database:
-            get_salt = db.GqlQuery("SELECT salt FROM Users WHERE username = :1", un)
-            got_salt = get_salt.get()
-            s = got_salt.salt
 
             # Get the password hash for the username from database:
             password_check = db.GqlQuery("SELECT * FROM Users WHERE username = :1", un)
             pwc = password_check.get()
             p = pwc.password
 
+            s = p.split('|')[1]
+
             # Make hash to check against database hash:
             pw_hash_salt = make_pw_hash(un, pw, s)
-            pw_hash = pw_hash_salt.split('|')[0]
 
             # Check to see if newly created hash == database hash:
-            if pw_hash != p:
+            if pw_hash_salt != p:
                 self.render('login.html', login_error=login_error)
 
             else:
