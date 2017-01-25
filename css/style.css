@@ -1,3 +1,9 @@
+/* Change Autocomplete styles in Chrome for input, textarea, and select: */
+:-webkit-autofill,
+:-webkit-autofill:hover,
+:-webkit-autofill:focus {
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 /* Not sure if this will come in handy or not. */
 .test {
