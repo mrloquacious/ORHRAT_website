@@ -802,6 +802,9 @@ And why didn't it work when I used an id in the col-xs-8? */
 /*    border: 2px solid red;
 */
 
+    background-image: url(../images/OR.jpg);
+    background-repeat: no-repeat;
+
     /*padding-top: 290px;*//* Using this instead of margin-top prevents scrolling to nothing. */
     /*padding-top: 150px;*/
 }
