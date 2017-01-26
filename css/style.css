@@ -99,11 +99,8 @@ a:focus {
 .navbar {
     background-image: url(../images/OR.jpg);
     background-repeat: no-repeat;
-        background-size: 60px 40px;
-            background-position: 6px 5px;
-
-
-
+    background-size: 60px 40px;
+    background-position: 6px 5px;
 
     background-color: #ea4f23;
     margin-bottom: 0px;
@@ -121,7 +118,6 @@ a:focus {
     font-size: 24px; /*64px;*/    /* Overrides .navbar-brand font-size.*/
     padding-left: 40px; /*60px;*/    /* Overrides .navbar-brand shite.*/
     /*padding-top: 60px;*/
-    margin: 0px 0 0 0;
     padding-top: 18px;
 }
 
@@ -813,7 +809,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 #heading {
 /*    border: 2px solid red;
 */
-v
+
 
     /*padding-top: 290px;*//* Using this instead of margin-top prevents scrolling to nothing. */
     /*padding-top: 150px;*/
