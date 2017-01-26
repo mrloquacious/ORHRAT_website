@@ -88,21 +88,13 @@ a:focus {
 
 /*--- Navbar ---*/
 
-/*    background-image: url(../images/tiny_OR.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 150px 0 15px 0;
-    min-height: 400px;
-
-    text-align: center;*/
-
 .navbar {
-    background-image: url(../images/OR.jpg);
+    background-image: url(../images/tiny_OR.jpg);
     background-repeat: no-repeat;
     background-size: 60px 40px;
     background-position: 6px 5px;
-
     background-color: #ea4f23;
+
     margin-bottom: 0px;
     border:none;
     border-radius: 0px;    /* Overrides rounded .navbar corners */
@@ -809,7 +801,6 @@ And why didn't it work when I used an id in the col-xs-8? */
 #heading {
 /*    border: 2px solid red;
 */
-
 
     /*padding-top: 290px;*//* Using this instead of margin-top prevents scrolling to nothing. */
     /*padding-top: 150px;*/
