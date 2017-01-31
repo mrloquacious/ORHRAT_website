@@ -34,64 +34,70 @@
   <div class="container-fluid clear">
 
     <div class="row clear">
-      <div class="col-xs-8" id="signup-heading">
+      <div id="signup-heading">
         <h3>SIGNUP</h3>
       </div>
-      <div class="col-xs-4">
-      </div>
     </div> <!--End of row.-->
+    <div class="row clear">
+      <div id="already-have-an-account">
+          <h6 id="yes-account">Already have an account?
+          <a href="login.html"><span id="already-have-an-account-button">Login</h6></a></span>
+      </div>
+    </div>
 
     <div class="row clear">
-      <div class="col-xs-8"  id="signup">
-        <form method="post">
-          <label><h4>Username</h4></label>
+      <form method="post">
+        <div id="signup">
+
+          <label><h4>Username</h4></label><br>
           <!-- It turns out the name="" is actually important. I'm not sure who uses it (Jinja 2? Python?), but things stop working when I take it out. -->
             <input type="text" id="signup-username" name="username" value="{{username}}">
               <span class="signup-error">{{username_error}}</span>
               <hr>
-          <label><h4>Password</h4></label>
+          <label><h4>Password</h4></label><br>
             <input type="password" id="signup-password" name="password" value="{{password}}">
               <span class="signup-error">{{password_error}}</span>
               <hr>
-          <label><h4>Verify</h4></label>
+          <label><h4>Verify</h4></label><br>
             <input type="password" id="verify" name="verify" value="{{verify}}">
               <span class="signup-error">{{verify_error}}</span>
               <hr>
-          <label><h4>First Name</h4></label>
+
+
+          <div class="row clear" id="firstname-lastname">
+
+          <div class="col-xs-6 clear">
+          <label><h4>First Name</h4></label><br>
             <input type="text" id="firstname" name="firstname" value="{{firstname}}">
               <span class="signup-error">{{firstname_error}}</span>
-              <hr>
-          <label><h4>Last Name</h4></label>
+          </div>
+
+          <div class="col-xs-6 clear">
+          <label><h4>Last Name</h4></label><br>
             <input type="text" id="lastname" name="lastname" value="{{lastname}}">
               <span class="signup-error">{{lastname_error}}</span>
+          </div>
+          </div>
+
               <hr>
-          <label><h4>Organization</h4></label>
+          <label><h4>Organization</h4></label><br>
               <input type="text" id="organization" name="organization" value="{{organization}}">
               <span class="signup-error">{{organization_error}}</span>
               <hr>
-          <label><h4>Email</h4></label>
+          <label><h4>Email</h4></label><br>
               <input type="text" id="signup-email" name="email" value="{{email}}">
               <span class="signup-error">{{email_error}}</span>
               <hr>
+        </div>
 
           <div id="signup-button-box">
             <input type="submit" id="signup-button-text" value="Signup">
           </div>
         </form>
-      </div>
-      <div class="col-xs-4">
-      </div>
+
     </div>
 
-    <div class="row clear">
-      <div class="col-xs-8" id="already-have-an-account">
-          <h6 id="yes-account">Already have an account?</h6>
-          <a href="login.html"><h6 id="already-have-an-account-button">Login</h6></a>
-        </div>
 
-      <div class="col-xs-4">
-      </div>
-    </div>
 
   </div> <!-- End of container. -->
 </body>

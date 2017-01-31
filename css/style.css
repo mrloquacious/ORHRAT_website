@@ -55,11 +55,6 @@ img, embed, object, video {
     max-height: 100%;
 }
 
-input {
-    border: none;
-    outline:none;
-}
-
 input[type="text"]:focus,
 input[type="password"]:focus {
     border-color: #3bc9de;
@@ -648,13 +643,14 @@ And why didn't it work when I used an id in the col-xs-8? */
 .body-standard {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+    max-width: 740px;
 }
 
 #login-heading, #signup-heading, #password-reset-heading {
     color: black;
     text-align: left;
-    margin-top: 100px; /*280px;*/
-    padding-left: 10%; /*150px;*/ /* Wondering if % is a good/bad idea. */
+    margin-top: 100px;
 }
 
 #login-heading h3 {
@@ -665,9 +661,8 @@ And why didn't it work when I used an id in the col-xs-8? */
 #username-password, #username-email, #signup {
     color: #3bc9de;
     text-align: left;
-    margin-top: 50px;
-    padding-left: 10%; /*150px;*/
-}
+/*    margin-top: 50px;
+*/}
 
 #username-password h3 {
     /*font-size: 64px;*/
@@ -676,16 +671,6 @@ And why didn't it work when I used an id in the col-xs-8? */
 
 #username-password hr, #username-email hr, #signup hr {
     border-top: 1px solid #414143;
-}
-
-#signup label {
-    display: block;
-    float: left;
-    min-width: 120px;
-}
-
-#signup input {
-    margin-top: 5px;
 }
 
 .signup-error, .login-error {
@@ -711,17 +696,33 @@ And why didn't it work when I used an id in the col-xs-8? */
     color: black;
 }
 
+#firstname-lastname {
+
+}
+
+#firstname {
+
+}
+
+#lastname {
+
+}
+
 #signup-username, #signup-password, #verify, #firstname, #lastname, #organization, #signup-email {
     font-size: 18px;
 }
 
-#password-retreival-account-creation, #back-to-login, #already-have-an-account {
+#password-retreival-account-creation, #back-to-login {
     text-align: right; /* Should this be in col? */
+}
+
+#already-have-an-account {
+    text-align: left;
 }
 
 #signup-button-box {
     margin-top: 50px;
-    float: right;
+    padding: 0 0 50px 0;
 }
 
 #go-button-box, #forgot-password-button-box {
