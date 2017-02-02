@@ -75,6 +75,11 @@ a:focus {
     padding: 0px;
 }
 
+.body-info-pages, .body-assessments-standards {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*--- Login-Menu-Page ---*/
 
 .align-right {
@@ -262,6 +267,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #go-back-button:hover {
+    background-color:#35b4c7;
     box-shadow: 0 1px 1px #999999 inset, 0 0 8px #999999;
 }
 
@@ -336,7 +342,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #cas-body hr {
-    border-top: 1px solid #414143;
+    border-top: 1px solid #A9A9A9;
     margin: 10px 0 10px 0;
 }
 
@@ -612,6 +618,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #next-button:hover {
+    background-color:#35b4c7;
     box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
 }
 
@@ -670,11 +677,11 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #username-password hr, #username-email hr, #signup hr {
-    border-top: 1px solid #414143;
+    border-top: 1px solid #A9A9A9;
 }
 
 .signup-error, .login-error {
-    color: black;
+    color: red;
     font-size: 14px;
 }
 
@@ -682,6 +689,14 @@ And why didn't it work when I used an id in the col-xs-8? */
   display: block;
   float: left;
   min-width: 130px;
+}
+
+#signup input[type="text"], #signup input[type="password"] {
+    width: 95%;
+}
+
+#firstname-lastname input[type="text"] {
+    width: 90%;
 }
 
 #username-password input, #username-email input {
@@ -708,8 +723,12 @@ And why didn't it work when I used an id in the col-xs-8? */
 
 }
 
+/*h4 {
+    font-size:24px;
+}*/
+
 #signup-username, #signup-password, #verify, #firstname, #lastname, #organization, #signup-email {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 #password-retreival-account-creation, #back-to-login {
@@ -717,12 +736,19 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #already-have-an-account {
+    font-size: 18px;
     text-align: left;
+    margin: 0 0 30px 0;
 }
 
 #signup-button-box {
+    border: none;
     margin-top: 50px;
     padding: 0 0 50px 0;
+}
+
+input[type="submit"] {
+    border: none;
 }
 
 #go-button-box, #forgot-password-button-box {
@@ -747,7 +773,7 @@ And why didn't it work when I used an id in the col-xs-8? */
     background-color:#3bc9de;
     font-size: 18px;
     font-weight:bold;
-    height:30px;
+    height:40px;
     width:150px;
     text-align: center;
     padding-top: 3px;
@@ -762,6 +788,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 #forgot-password-button-text:hover,
 #forgot-password-button-text:active,
 #forgot-password-button-text:focus {
+    background-color:#35b4c7;
     box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
 }
 
@@ -778,15 +805,20 @@ And why didn't it work when I used an id in the col-xs-8? */
 }
 
 #no-account, #yes-account {
-    font-weight: bold;
+    font-size: 18px;
+    /*font-weight: bold;*/
     margin-top: 20px;
     padding-right: 0%;
 }
 
 #account-creation-button, #already-have-an-account-button {
     color: #3bc9de;
-    font-weight: bold;
-    padding-right: 0%;
+/*    font-weight: bold;
+*/    padding-right: 0%;
+}
+
+#already-have-an-account-button {
+    font-size: 18px;
 }
 
 #account-creation-button:hover {
@@ -849,19 +881,20 @@ And why didn't it work when I used an id in the col-xs-8? */
     background-color:#3bc9de;
     font-weight: bold;
     /*font-size: 44px;*/
-    font-size: ;
+    font-size: 18px;
     /*height:90px;
     width:375px;*/
-    height:30px;
+    height:40px;
     width:150px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     /*padding-top: 15px;*/
-    padding-top: 5px;
+    padding-top: 7px;
 }
 
 #get-started-button:hover {
+    background-color:#35b4c7;
     box-shadow: 0 1px 1px #3bc9de inset, 0 0 20px #3bc9de;
 }
 
@@ -875,7 +908,7 @@ And why didn't it work when I used an id in the col-xs-8? */
 
 #login-question {
     /*font-size: 24px;*/
-    font-size: ;
+    font-size: 14px;
     margin-bottom: 0px; /* This overrides the <p> default. */
     /*padding-top: 60px;*/
     padding-top: 30px;
