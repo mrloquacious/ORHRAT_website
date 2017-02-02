@@ -31,71 +31,74 @@
     </div>
   </nav>
 
-  <div class="container-fluid clear">
+  <div class="container-fluid clear" id="signup">
 
     <div class="row clear">
       <div id="signup-heading">
         <h3>SIGNUP</h3>
       </div>
     </div> <!--End of row.-->
+
     <div class="row clear">
       <div id="already-have-an-account">
-          <h6 id="yes-account">Already have an account?&nbsp;
-          <a href="login.html"><span id="already-have-an-account-button">Login</h6></a></span>
+        <h6 id="yes-account">Already have an account?&nbsp;
+        <a href="login.html"><span id="already-have-an-account-button">Login</h6></a></span>
       </div>
     </div>
 
-    <div class="row clear">
-      <form method="post">
-        <div id="signup">
+    <form method="post">
+      <div class="row clear">
 
-          <label><h4>Username</h4></label><br>
-          <!-- It turns out the name="" is actually important. I'm not sure who uses it (Jinja 2? Python?), but things stop working when I take it out. -->
-            <input type="text" id="signup-username" name="username" value="{{username}}"><br>
-              <span class="signup-error">{{username_error}}</span>
-              <hr>
-          <label><h4>Password</h4></label><br>
-            <input type="password" id="signup-password" name="password" value="{{password}}"><br>
-              <span class="signup-error">{{password_error}}</span>
-              <hr>
-          <label><h4>Verify</h4></label><br>
-            <input type="password" id="verify" name="verify" value="{{verify}}"><br>
-              <span class="signup-error">{{verify_error}}</span>
-              <hr>
+        <label><h4>Username</h4></label><br>
+      <!-- It turns out the name="" is actually important. I'm not sure who uses it (Jinja 2? Python?), but things stop working when I take it out. -->
+        <input type="text" id="signup-username" name="username" value="{{username}}"><br>
+
+        <span class="signup-error">{{username_error}}</span>
+        <hr>
+
+        <label><h4>Password</h4></label><br>
+        <input type="password" id="signup-password" name="password" value="{{password}}"><br>
+        <span class="signup-error">{{password_error}}</span>
+        <hr>
+        <label><h4>Verify</h4></label><br>
+        <input type="password" id="verify" name="verify" value="{{verify}}"><br>
+        <span class="signup-error">{{verify_error}}</span>
+        <hr>
+      </div>
 
 
-          <div class="row clear" id="firstname-lastname">
-
-          <div class="col-xs-6 clear">
+      <div class="row clear" id="firstname-lastname">
+        <div class="col-xs-6 clear">
           <label><h4>First Name</h4></label><br>
-            <input type="text" id="firstname" name="firstname" value="{{firstname}}"><br>
-              <span class="signup-error">{{firstname_error}}</span>
-          </div>
-
-          <div class="col-xs-6 clear">
-          <label><h4>Last Name</h4></label><br>
-            <input type="text" id="lastname" name="lastname" value="{{lastname}}"><br>
-              <span class="signup-error">{{lastname_error}}</span>
-          </div>
-          </div>
-
-              <hr>
-          <label><h4>Organization</h4></label><br>
-              <input type="text" id="organization" name="organization" value="{{organization}}"><br>
-              <span class="signup-error">{{organization_error}}</span>
-              <hr>
-          <label><h4>Email</h4></label><br>
-              <input type="text" id="signup-email" name="email" value="{{email}}"><br>
-              <span class="signup-error">{{email_error}}</span>
-              <hr>
+          <input type="text" id="firstname" name="firstname" value="{{firstname}}"><br>
+          <span class="signup-error">{{firstname_error}}</span>
         </div>
 
-          <div id="signup-button-box">
-            <input type="submit" id="signup-button-text" value="Signup">
-          </div>
-        </form>
+        <div class="col-xs-6 clear">
+          <label><h4>Last Name</h4></label><br>
+          <input type="text" id="lastname" name="lastname" value="{{lastname}}"><br>
+          <span class="signup-error">{{lastname_error}}</span>
+        </div>
+      </div>
 
-    </div>
+      <hr>
+      <div class="row clear">
+        <label><h4>Organization</h4></label><br>
+        <input type="text" id="organization" name="organization" value="{{organization}}"><br>
+        <span class="signup-error">{{organization_error}}</span>
+        <hr>
+        <label><h4>Email</h4></label><br>
+        <input type="text" id="signup-email" name="email" value="{{email}}"><br>
+        <span class="signup-error">{{email_error}}</span>
+        <hr>
+      </div>
+
+      <div class="row clear">
+        <div id="signup-button-box">
+          <input type="submit" id="signup-button-text" value="Signup">
+        </div>
+      </div>
+    </form>
 
 
 

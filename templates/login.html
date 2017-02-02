@@ -33,43 +33,39 @@
   <div class="container-fluid clear">
 
     <div class="row clear">
-      <div class="col-xs-8" id="login-heading">
+      <div id="login-heading">
         <h3>LOGIN</h3>
-      </div>
-      <div class="col-xs-4">
+        <h6 id="no-account">Don't have an account?&nbsp;
+        <a href="ORHRAT_user_signup.html"><span id="account-creation-button">Sign Up</span></a></h6>
       </div>
     </div> <!--End of login-body row.-->
 
     <div class="row clear">
-      <div class="col-xs-8" id="username-password">
+      <div id="username-password">
         <form method="post">
-          <label><h3>Username</h3></label>
-            <input type="text" name="username" id="username" value="{{username}}">
+
+          <label><h3>Username</h3></label><br>
+
+          <input type="text" name="username" id="username" value="{{username}}"><br>
           <span class="login-error">{{login_error}}</span>
           <hr>
-          <label><h3>Password</h3></label>
-            <input type="password" name="password" id="password" value="{{password}}">
+
+          <label><h3>Password</h3></label><br>
+
+          <input type="password" name="password" id="password" value="{{password}}">
           <hr>
+
+          <div id="password-retrieval-account-creation">
+            <a href="forgot_password.html">
+            <h6 id="password-retrieval-button"><strong>I forgot my password.</strong></h6>
+            </a>
+          </div>
           <div id="go-button-box">
             <input type="submit" id="go-button-text" value="Go">
           </div>
         </form>
       </div>
-      <div class="col-xs-4">
-      </div>
-    </div>
-
-    <div class="row clear">
-      <div class="col-xs-8" id="password-retreival-account-creation">
-        <a href="forgot_password.html">
-        <h6 id="password-retrieval-button"><strong>I forgot my password.</strong></h6>
-        </a>
-        <h6 id="no-account">Don't have an account?</h6>
-        <a href="ORHRAT_user_signup.html"><h6 id="account-creation-button">Start account creation</h6></a>
-      </div>
-      <div class="col-xs-4">
-      </div>
     </div>
   </div>
-  </body>
+</body>
 </html>
