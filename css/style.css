@@ -57,10 +57,18 @@ img, embed, object, video {
 
 input[type="text"]:focus,
 input[type="password"]:focus {
+    border-color: #E0E0E0;
+    /*box-shadow: 0px 1px 1px #E0E0E0 inset, 0 0 8px #E0E0E0;*/
+    outline: 0 none; /* This overrides default blue. */
+    background-color: white; /* Can't get rid of blue highlight. */
+}
+
+/*input[type="text"]:focus,
+input[type="password"]:focus {
     border-color: #3bc9de;
     box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
     outline: 0 none;
-}
+}*/
 
 a,
 a:hover,
@@ -261,11 +269,12 @@ label .fake-textbox {/* <-- style the artificial checkbox */
     margin:50px 0 20px 0;
 }
 
-#go-back-button-box {
-    float: left;
+#st4-buttons:hover {
 }
 
-#go-back-button {
+
+#go-back-button-box {
+    float: left;
 }
 
 #go-back-button-text {
@@ -281,7 +290,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 }
 
 #go-back-button:hover {
-    background-color:#35b4c7;
+    background-color:#e5e5e5;
     box-shadow: 0 1px 1px #999999 inset, 0 0 8px #999999;
 }
 
@@ -289,22 +298,21 @@ label .fake-textbox {/* <-- style the artificial checkbox */
     float:right;
 }
 
-#save-and-continue-button {
-}
-
 #save-and-continue-button-text {
     color: white;
     background-color: #c2c2c2;
-    border: 0px; /* This removes bootstrap styling, which is kind of cool.  May be best to style the other buttons like this, but I've removed style for consistancy. */
     font-size: 18px;
     height:75px;
     width:180px;
     text-align: right;
     padding: 0 10px 0 0;
+    border: 0px;  /*This removes bootstrap styling, which is kind of cool.  May be best to style the other buttons like this, but I've removed style for consistancy. */
 }
 
-#save-and-continue-button:hover {
+#save-and-continue-button-text:hover {
+    background-color: #b2b2b2;
     box-shadow: 0 1px 1px #c2c2c2 inset, 0 0 8px #c2c2c2;
+    border:0px;
 }
 
 #save-and-go-button-box {
@@ -325,7 +333,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 
 #save-and-go-actual-button {
     background-color:#3bc9de;
-    border: 0px;
+    border:0px;
 }
 
 #save-and-go-button-text {
@@ -339,9 +347,28 @@ label .fake-textbox {/* <-- style the artificial checkbox */
     padding: 0px 0 50px 0;
 }
 
-#save-and-go-button:hover {
-    box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
+#save-and-go-button-box:hover {
+    background-color: #35b4c7;
 }
+
+#save-and-go-button:hover {
+    background-color: #35b4c7;
+    box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
+    border:0px;
+}
+
+/*#save-and-go-actual-button:hover {
+    background-color:#35b4c7;
+    border:0px;
+}
+
+#save-and-go-button-text:hover {
+    background-color: #35b4c7;
+}
+
+#save-and-go-button-bottom-text:hover {
+    background-color: #35b4c7;
+}*/
 
 /*--- CAS (Curriculum Assessment Summary) ---*/
 
@@ -426,6 +453,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 
 .start-analysis-button-text:hover,
 .start-standard-button-text:hover {
+    background-color: #35b4c7;
     box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
 }
 
@@ -504,6 +532,12 @@ label .fake-textbox {/* <-- style the artificial checkbox */
     width:120px;
     text-align: center;
     padding-top: 10px;
+}
+
+.submit-button-text:hover {
+    color: #666666;
+    background-color:#959595;
+    box-shadow: 0 1px 1px #c2c2c2 inset, 0 0 8px #c2c2c2;
 }
 
 /*--- What-Is-Meant (wim) ---*/
