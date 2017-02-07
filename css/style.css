@@ -154,51 +154,38 @@ a:focus {
 
 /*--- Standard 4 (st4)---*/
 
-
 #st4-body {
     margin-top: 60px;
     padding-left: 50px;
 }
 
-/* NA */
 #st4-head-subhead {
     max-width: 1000px;
 }
 
-/* NA */
 #st4-pdf {
     color:#3bc9de;
     float:right;
     margin: 0px 0 0 0;
 }
 
-/* NA */
 #st4-heading {
     margin: 50px 0 0 0;
 }
 
-/* NA */
 #st4-subhead {
     background-color: #fff7e6;
     border-left: 7px solid #ea4f23;
     margin: 20px 0 0 0;
 }
 
-/* NA */
 #st4-subhead-text {
     margin: 10px;
 }
 
-/* NA */
 #checkbox-header {
     margin: 25px 200px 5px 20px;
     max-width: 750px;
-}
-
-
-
-
-#st4-form {
 }
 
 #checkbox-list label {
@@ -247,23 +234,9 @@ label .fake-textbox {/* <-- style the artificial checkbox */
     line-height: 26px;
 }
 
-.actual-text {
-}
-
-
-
 .checkbox-code {
     color: #3bc9de;
 }
-
-
-
-
-
-
-
-
-
 
 #scoring {
     margin: 20px 0 0 20px;
@@ -277,9 +250,6 @@ label .fake-textbox {/* <-- style the artificial checkbox */
     color: #3bc9de;
     border-bottom: 2px solid #999999;
     margin: 0 0 0 40px;
-}
-
-#out-of-number {
 }
 
 #your-score {
@@ -297,9 +267,9 @@ label .fake-textbox {/* <-- style the artificial checkbox */
     margin:50px 0 20px 0;
 }
 
-#st4-buttons:hover {
+button:focus {
+    outline:0;
 }
-
 
 #go-back-button-box {
     float: left;
@@ -324,6 +294,7 @@ label .fake-textbox {/* <-- style the artificial checkbox */
 
 #save-and-continue-button-box {
     float:right;
+    margin: 0 10px 0 0;
 }
 
 #save-and-continue-button-text {
@@ -333,70 +304,41 @@ label .fake-textbox {/* <-- style the artificial checkbox */
     height:75px;
     width:180px;
     text-align: right;
-    padding: 0 10px 0 0;
     border: 0px;  /*This removes bootstrap styling, which is kind of cool.  May be best to style the other buttons like this, but I've removed style for consistancy. */
 }
 
 #save-and-continue-button-text:hover {
     background-color: #b2b2b2;
     box-shadow: 0 1px 1px #c2c2c2 inset, 0 0 8px #c2c2c2;
-    border:0px;
 }
 
 #save-and-go-button-box {
     float:right;
-    margin-left: 10px;
 }
 
-#save-and-go-button {
+#save-and-go-button button{
     color: white;
     background-color:#3bc9de;
     font-size: 18px;
-    font-weight:;
     height:75px;
     width:250px;
-    text-align: right;
-    padding: 10px 10px 0 0;
-}
-
-#save-and-go-actual-button {
-    background-color:#3bc9de;
+    text-align: center;
     border:0px;
 }
 
-#save-and-go-button-text {
-    background-color: #3bc9de;
-}
-
-#save-and-go-button-bottom-text {
-    font-size: 10px;
-    color: white;
-    text-align: right;
-    padding: 0px 0 50px 0;
-}
-
-#save-and-go-button-box:hover {
-    background-color: #35b4c7;
-}
-
-#save-and-go-button:hover {
-    background-color: #35b4c7;
-    box-shadow: 0 1px 1px #3bc9de inset, 0 0 8px #3bc9de;
-    border:0px;
-}
-
-/*#save-and-go-actual-button:hover {
-    background-color:#35b4c7;
-    border:0px;
-}
-
+#save-and-go-actual-button:hover,
 #save-and-go-button-text:hover {
     background-color: #35b4c7;
 }
 
-#save-and-go-button-bottom-text:hover {
-    background-color: #35b4c7;
-}*/
+#save-and-go-actual-button:hover {
+    box-shadow: 0 1px 1px #3bc9de inset, 0 0 10px #3bc9de;
+}
+
+#save-and-go-button-bottom-text {
+    font-size: 10px;
+    margin: 0 0 50px 0;
+}
 
 /*--- CAS (Curriculum Assessment Summary) ---*/
 
