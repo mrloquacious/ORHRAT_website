@@ -9,6 +9,8 @@ import hmac
 from google.appengine.ext import db
 from module import SECRET
 
+# This is a test comment. 9/11/18
+
 # Set up the Jinja2 template filesystem:
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir), autoescape = True)
